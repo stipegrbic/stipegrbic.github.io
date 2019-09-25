@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+  <title>Cordova for Windows 10 troubles | Stipe Grbić</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="One of my recent tasks at work was to port a mobile web app to Windows 10 UWP. The app was built using Apache Cordova, and as Cordova and Microsoft worked together to support Windows 10, this should b">
+<meta name="keywords" content="windows,cordova">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cordova for Windows 10 troubles">
+<meta property="og:url" content="http://stipe.xyz/cordova-for-windows-10-troubles/index.html">
+<meta property="og:site_name" content="Stipe Grbić">
+<meta property="og:description" content="One of my recent tasks at work was to port a mobile web app to Windows 10 UWP. The app was built using Apache Cordova, and as Cordova and Microsoft worked together to support Windows 10, this should b">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-09-25T11:34:25.660Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Cordova for Windows 10 troubles">
+<meta name="twitter:description" content="One of my recent tasks at work was to port a mobile web app to Windows 10 UWP. The app was built using Apache Cordova, and as Cordova and Microsoft worked together to support Windows 10, this should b">
+  
+  
+    <link rel="icon" href="favicon.png">
+  
+  
+ <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600" rel="stylesheet" type="text/css">
+ <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+
+
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+  
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-74043426-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+
+  
+
+  
+</head></html>
+<body>
+  <div id="container">
+    <header id="header">
+  <div id="header-main" class="header-inner">
+    <div class="outer">
+      <a href="/" id="logo"><span class="site-title">Stipe Grbić</span></a>
+      <nav id="main-nav">
+        
+          <a class="main-nav-link" href="/my-work">My work</a>
+        
+          <a class="main-nav-link" href="/tags">Tags</a>
+        
+      </nav>
+      
+        <nav id="sub-nav">
+          <div class="profile" id="profile-nav">
+            <a id="profile-anchor" href="javascript:;"><img class="avatar" src="/css/images/avatar.png"><i class="fa fa-caret-down"></i></a>
+          </div>
+        </nav>
+      
+    </div>
+  </div>
+  <div id="main-nav-mobile" class="header-sub header-inner">
+    <table class="menu outer">
+      <tr>
+        
+          <td><a class="main-nav-link" href="/my-work">My work</a></td>
+        
+          <td><a class="main-nav-link" href="/tags">Tags</a></td>
+        
+      </tr>
+    </table>
+  </div>
+</header>
+
+    <div class="outer">
+      
+        <aside id="profile">
+  <div class="inner profile-inner">
+    <div class="base-info profile-block">
+      <img id="avatar" src="/css/images/avatar.png">
+      <h2 id="name">Stipe Grbić</h2>
+      <h3 id="title">Software Developer</h3>
+      <span id="location"><i class="fa fa-map-marker"></i>Croatia</span>
+      <a id="follow" href="https://twitter.com/_stipegrbic_">FOLLOW</a>
+    </div>
+    <div class="article-info profile-block">
+      <div class="article-info-block">
+        17
+        <span>posts</span>
+      </div>
+      <div class="article-info-block">
+        13
+        <span>tags</span>
+      </div>
+    </div>
+    
+    <div class="contact-info profile-block">
+      <table class="contact-list">
+        <tr>
+          
+          <td><a href="http://twitter.com/_stipegrbic_" target="_blank" title="twitter"><i class="fa fa-twitter"></i></a></td>
+          
+          <td><a href="https://hr.linkedin.com/pub/stipe-grbić/83/45a/450" target="_blank" title="linkedin"><i class="fa fa-linkedin"></i></a></td>
+          
+          <td><a href="/atom.xml" target="_blank" title="rss"><i class="fa fa-rss"></i></a></td>
+          
+        </tr>
+      </table>
+    </div>
+    
+    
+  </div>
+</aside>
+
+      
+      <section id="main"><article id="post-cordova-for-windows-10-troubles" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Cordova for Windows 10 troubles
+    </h1>
+  
+
+        <div class="article-meta">
+          
+  <div class="article-date">
+    <i class="fa fa-calendar"></i>
+    <a href="/cordova-for-windows-10-troubles/">
+      <time datetime="2016-01-28T14:51:59.000Z" itemprop="datePublished">2016-01-28</time>
+    </a>
+  </div>
+
+
+          
+        </div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+                
+        <p>One of my recent tasks at work was to port a mobile web app to Windows 10 UWP. The app was built using Apache Cordova, and as Cordova and Microsoft worked together to support Windows 10, this should be pretty straightforward. Nobody really expected it to be as simple as it was advertised, and I was ready for the multi platform development troubles.<br><a id="more"></a></p>
+<h3 id="cordova-platform-add-windows"><a href="#cordova-platform-add-windows" class="headerlink" title="cordova platform add windows"></a>cordova platform add windows</h3><p>First things first, go to Cordova website, read some documentation on how to add a platform and create a project to start working. Ok, platform added, Windows UWP project created and I was ready to start the app. After a few days (yes, days), of html and web problems solving I finally had the app running. Now this was just the web part of the app, without the native plugins that the app needed. Some of the plugins were available and some of them didn’t support Windows. For those we agreed to not use them at the moment, but there was one custom built plugin which we really needed to have – Parse SDK which was used for push notifications. </p>
+<h3 id="Parse"><a href="#Parse" class="headerlink" title="Parse"></a>Parse</h3><p>I used Parse SDK on native Windows (Phone) 8 applications before and knew how to work with Parse. The first problems started when I realized Cordova for Windows 10 is not using .NET C#/XAML, but JavaScript app. So the Parse .NET SDK couldn’t be used here. Ok, Parse also provides other SDKs as well as REST API for communication so I was ready to adapt. I went on by adding the JavaScript SDK to the app, but nope, it can’t be used on a client for push notifications. It simply doesn’t have the needed functionality like registering the device for receiving push notifications. The JavaScript SDK was built mainly for server side and Parse Cloud Code implementation.</p>
+<p>Ok, but I knew this is a Windows UWP app, it should be able to execute some .NET code. I went on researching how to create a native Cordova plugin for Windows 10 and found out that although they were intended to be written in JavaScript using WinJS, there was also an option to have .NET native plugins written as Windows Runtime Component. Until then I wasn’t familiar with those kind of projects, after all I never really worked with multi-platform technologies, but rather developed native Windows apps. So this Windows Runtime Component is something like Class Library, but much more restrictive as it can be consumed by languages outside the .NET world. So I created one such project, added the Parse .NET SDK reference, and packed it all in a Cordova plugin. The app was working! Push notifications coming! Let me just mention Parse .NET SDK doesn’t support the Windows 10. But as it was open sourced recently I modified it a bit and was able to make it work eventually.</p>
+<h3 id="NET-native"><a href="#NET-native" class="headerlink" title=".NET native"></a>.NET native</h3><p>Let’s pack this up and submit to the store, I said. Not so fast, Windows App Certification Kit replied. Apparently I was using some unsupported APIs coming from some suspicious .DLLs. A quick google search pointed that I wasn’t using .NET native compiler. It’s a new thing from Windows 10, in short it means apps are compiled to machine code and as such distributed to the store. Advantages being smaller app packages, faster downloads and installations. Ok, but why it wouldn’t use the .NET native, why do I need to enable it myself and where do I do it? I compared the .jsproj created by Cordova, and .csproj created by Visual Studio when you create a plain Windows 10 app from the template. The native app had a directive <code>&lt;UseDotNetNativeToolchain&gt;</code> which my Cordova app didn’t have. Now I wasn’t sure if that was intentionally missing as Cordova app wasn’t a .NET app, so maybe it didn’t even need the .NET compilation. But I tried with it and wow, the unsupported API error was gone. One small win for me against Cordova bugs.</p>
+<p>Now I had the .appx package which was passing the WACK tests and went to submit it to the store. The Dev Center then said: “You cannot submit pre-compiled .NET Native packages. Please use .appxupload file for store submission”. Hm, Ok I know what the .appxupload file is, a simple zip with .appx file inside, but the Visual Studio didn’t create one for me. And for Windows 8 apps I used .appx files for store submission fine. Now how do I get the .appxupload manually? After quite a bit googling I found about MSBuild tool which is used internally by Visual Studio to create app packages. It was hard to find any related documentation on how to use it to produce .appxupload file, but some more googling I came across this <a href="https://oren.codes/tag/msbuild/" target="_blank" rel="noopener">blog post</a> which helped me to finally create a .appxupload file. All right, store submission went fine (not immediately, but I’ll skip boring parts), the app was in store. Installed it, tried to get push notifications but no, they are not coming and device is not registering on Parse to receive them. Seems like my Parse plugin wasn’t working. Unpacking my .appxupload and .appx file inside it, I saw there were no Parse .DLLs inside. Somehow in debug build mode they are packed, but in release they are not. Here’s my StackOverflow question which remains unanswered at the time of writing <a href="http://stackoverflow.com/questions/34722250/cordova-windows-10-native-plugin" target="_blank" rel="noopener">this post</a> which explains it a bit better. Team from Visual Studio Cordova Tools tried to answer but couldn’t really help me solve the issue.</p>
+<h3 id="HTTP-to-the-rescue"><a href="#HTTP-to-the-rescue" class="headerlink" title="HTTP to the rescue"></a>HTTP to the rescue</h3><p>I suspected the .DLLs couldn’t be used in Windows Runtime Component and .NET native combination, but never got any errors or found it documented anywhere. All the Windows Runtime Component plugin examples were rather simple and weren’t really helpful for my case. I tried to see what happens when I convert the Parse SDK to Windows Runtime component – it was bloody, red error symbols everywhere. It would be a project itself fixing it all up with no guarantee it would be possible and worked at all. Although I tried for quite some time to make this work in release mode as it did in debug, eventually I went by yet another approach – Parse REST API. Official documentation stated push notifications could be used only by native client SDKs. Device push notification registration was done by the SDK and Parse own logic on server side. Nevertheless, I tried to emulate the native SDK via the REST API by creating device installation objects “by force” (a HTTP POST request really). I didn’t expect it to work so simple, but it did! Device was registering fine, push notifications were working again. Ok so I implemented the device registration logic, a few methods regarding the channel manipulations that we needed and push notification handling in JavaScript and it was ready to go. </p>
+<p>All right, finally I could get rid of all the .DLLs and .NET native troubles. I packed it all again, submission to the store went fine, and the app was working this time. I even tried to utilize native Cordova commands for project build, but with no luck. It’s so utterly broken that it messes up .appxmanifest file by unnecessarily changing the Application Id property to invalid value. That’s the sad state of Cordova for Windows 10, it’s not finished, undocumented, and not ready for production use. Cordova Tools for Visual Studio that’s advertised by Microsoft is not what would you expect, tools for building Windows apps using Cordova. Rather it is a Visual Studio extension which enables you to build Cordova based iOS and Android apps together with Windows in one IDE. That should not come as surprise, but just one more indicator that Microsoft now focuses (too much) on building iOS and Android apps while leaving Windows app development unfinished.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://stipe.xyz/cordova-for-windows-10-troubles/" data-id="ck0z7mlty0007hsv36ci39k57" class="article-share-link">Share</a>
+      
+        <a href="http://stipe.xyz/cordova-for-windows-10-troubles/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/cordova/">cordova</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/windows/">windows</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/migrating-from-google-app-engine/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Migrating from Google App Engine
+        
+      </div>
+    </a>
+  
+  
+    <a href="/you-should-use-your-apps/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">You should use your apps</div>
+    </a>
+  
+</nav>
+
+
+  
+</article>
+
+
+<section id="comments">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+</section>
+      
+        <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">recents</h3>
+    <div class="widget">
+      <ul id="recent-post" class="no-thumbnail">
+        
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category"></p>
+              <p class="item-title"><a href="/data-affects-algorithm-performance/" class="title">Data affects algorithm performance</a></p>
+              <p class="item-date"><time datetime="2019-09-25T11:37:59.000Z" itemprop="datePublished">2019-09-25</time></p>
+            </div>
+          </li>
+        
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category"></p>
+              <p class="item-title"><a href="/an-excel-interop-trick/" class="title">An Excel interop trick</a></p>
+              <p class="item-date"><time datetime="2019-05-09T10:10:04.000Z" itemprop="datePublished">2019-05-09</time></p>
+            </div>
+          </li>
+        
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category"></p>
+              <p class="item-title"><a href="/there-s-no-privacy-on-social-networks/" class="title">There&#39;s no privacy on social networks</a></p>
+              <p class="item-date"><time datetime="2018-01-18T08:32:40.000Z" itemprop="datePublished">2018-01-18</time></p>
+            </div>
+          </li>
+        
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category"></p>
+              <p class="item-title"><a href="/be-careful-with-cache/" class="title">Be careful with cache</a></p>
+              <p class="item-date"><time datetime="2017-11-29T13:49:03.000Z" itemprop="datePublished">2017-11-29</time></p>
+            </div>
+          </li>
+        
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category"></p>
+              <p class="item-title"><a href="/back-to-heroku/" class="title">Back to Heroku</a></p>
+              <p class="item-date"><time datetime="2017-10-24T11:21:52.000Z" itemprop="datePublished">2017-10-24</time></p>
+            </div>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/android/">android</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/backend/">backend</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/cordova/">cordova</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/finances/">finances</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/google-app-engine/">google app engine</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/node-js/">node.js</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/opinions/">opinions</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/personal/">personal</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/project-management/">project management</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/software-development/">software development</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/windows/">windows</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/windows-phone/">windows phone</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/xamarin/">xamarin</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+</aside>
+      
+    </div>
+    <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2015 - 2019 Stipe Grbić<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. Theme by <a href="http://github.com/ppoffice">PPOffice</a>
+    </div>
+  </div>
+</footer>
+    
+
+<script>
+  var disqus_shortname = 'stipegrbic';
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>

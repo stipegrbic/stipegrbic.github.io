@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+  <title>Data affects algorithm performance | Stipe Grbić</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="The title is so obvious that you’re probably wondering why I had to write a blog post about it. I’m also surprised how obvious truts must be repeated in order to comply with them. I’ll explain what in">
+<meta name="keywords" content="software development">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Data affects algorithm performance">
+<meta property="og:url" content="http://stipe.xyz/data-affects-algorithm-performance/index.html">
+<meta property="og:site_name" content="Stipe Grbić">
+<meta property="og:description" content="The title is so obvious that you’re probably wondering why I had to write a blog post about it. I’m also surprised how obvious truts must be repeated in order to comply with them. I’ll explain what in">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-09-25T11:52:30.290Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Data affects algorithm performance">
+<meta name="twitter:description" content="The title is so obvious that you’re probably wondering why I had to write a blog post about it. I’m also surprised how obvious truts must be repeated in order to comply with them. I’ll explain what in">
+  
+  
+    <link rel="icon" href="favicon.png">
+  
+  
+ <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600" rel="stylesheet" type="text/css">
+ <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+
+
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+  
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-74043426-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+
+  
+
+  
+</head></html>
+<body>
+  <div id="container">
+    <header id="header">
+  <div id="header-main" class="header-inner">
+    <div class="outer">
+      <a href="/" id="logo"><span class="site-title">Stipe Grbić</span></a>
+      <nav id="main-nav">
+        
+          <a class="main-nav-link" href="/my-work">My work</a>
+        
+          <a class="main-nav-link" href="/tags">Tags</a>
+        
+      </nav>
+      
+        <nav id="sub-nav">
+          <div class="profile" id="profile-nav">
+            <a id="profile-anchor" href="javascript:;"><img class="avatar" src="/css/images/avatar.png"><i class="fa fa-caret-down"></i></a>
+          </div>
+        </nav>
+      
+    </div>
+  </div>
+  <div id="main-nav-mobile" class="header-sub header-inner">
+    <table class="menu outer">
+      <tr>
+        
+          <td><a class="main-nav-link" href="/my-work">My work</a></td>
+        
+          <td><a class="main-nav-link" href="/tags">Tags</a></td>
+        
+      </tr>
+    </table>
+  </div>
+</header>
+
+    <div class="outer">
+      
+        <aside id="profile">
+  <div class="inner profile-inner">
+    <div class="base-info profile-block">
+      <img id="avatar" src="/css/images/avatar.png">
+      <h2 id="name">Stipe Grbić</h2>
+      <h3 id="title">Software Developer</h3>
+      <span id="location"><i class="fa fa-map-marker"></i>Croatia</span>
+      <a id="follow" href="https://twitter.com/_stipegrbic_">FOLLOW</a>
+    </div>
+    <div class="article-info profile-block">
+      <div class="article-info-block">
+        17
+        <span>posts</span>
+      </div>
+      <div class="article-info-block">
+        13
+        <span>tags</span>
+      </div>
+    </div>
+    
+    <div class="contact-info profile-block">
+      <table class="contact-list">
+        <tr>
+          
+          <td><a href="http://twitter.com/_stipegrbic_" target="_blank" title="twitter"><i class="fa fa-twitter"></i></a></td>
+          
+          <td><a href="https://hr.linkedin.com/pub/stipe-grbić/83/45a/450" target="_blank" title="linkedin"><i class="fa fa-linkedin"></i></a></td>
+          
+          <td><a href="/atom.xml" target="_blank" title="rss"><i class="fa fa-rss"></i></a></td>
+          
+        </tr>
+      </table>
+    </div>
+    
+    
+  </div>
+</aside>
+
+      
+      <section id="main"><article id="post-data-affects-algorithm-performance" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Data affects algorithm performance
+    </h1>
+  
+
+        <div class="article-meta">
+          
+  <div class="article-date">
+    <i class="fa fa-calendar"></i>
+    <a href="/data-affects-algorithm-performance/">
+      <time datetime="2019-09-25T11:37:59.000Z" itemprop="datePublished">2019-09-25</time>
+    </a>
+  </div>
+
+
+          
+        </div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+                
+        <p>The title is so obvious that you’re probably wondering why I had to write a blog post about it. I’m also surprised how obvious truts must be repeated in order to comply with them. I’ll explain what inspired me.<br><a id="more"></a></p>
+<h3 id="Optimize"><a href="#Optimize" class="headerlink" title="Optimize"></a>Optimize</h3><p>Recently I got a task to optimize a piece of software I worked on. This was a part of code I inherited and wasn’t so familiar with. In short, it had to process a list of data input, compute something and save the information to the database. So simple, right? Of course, it had some complicated computation in each iteration, but to my surprise that wasn’t the bottleneck. The bottlneck was in the storing and retrieving data from database. It was done in each iteration because the previous one affected computation of the next one. So a developer before me decided to use the database as a single point of truth and on each iteration he saved the computed data, and retreived it again in the next iteration. For a short while I was angry with this unknown suspect and couldn’t understand why would he do it like that. Then I realized, he couldn’t see the actual slowness of the application because his database was probably almost empty. The actual customer has a lot of data in it, so in each iteration there’s a lot of data to send and retrieve from database. That’s when I got a bit of understanding for the guy, but also reminded myself, next time when I’m trying to write optimal code, have in mind the actual data might affect its performance.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://stipe.xyz/data-affects-algorithm-performance/" data-id="ck0z7mltw0006hsv3k8c5au55" class="article-share-link">Share</a>
+      
+        <a href="http://stipe.xyz/data-affects-algorithm-performance/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/software-development/">software development</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/an-excel-interop-trick/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">An Excel interop trick</div>
+    </a>
+  
+</nav>
+
+
+  
+</article>
+
+
+<section id="comments">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+</section>
+      
+        <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">recents</h3>
+    <div class="widget">
+      <ul id="recent-post" class="no-thumbnail">
+        
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category"></p>
+              <p class="item-title"><a href="/data-affects-algorithm-performance/" class="title">Data affects algorithm performance</a></p>
+              <p class="item-date"><time datetime="2019-09-25T11:37:59.000Z" itemprop="datePublished">2019-09-25</time></p>
+            </div>
+          </li>
+        
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category"></p>
+              <p class="item-title"><a href="/an-excel-interop-trick/" class="title">An Excel interop trick</a></p>
+              <p class="item-date"><time datetime="2019-05-09T10:10:04.000Z" itemprop="datePublished">2019-05-09</time></p>
+            </div>
+          </li>
+        
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category"></p>
+              <p class="item-title"><a href="/there-s-no-privacy-on-social-networks/" class="title">There&#39;s no privacy on social networks</a></p>
+              <p class="item-date"><time datetime="2018-01-18T08:32:40.000Z" itemprop="datePublished">2018-01-18</time></p>
+            </div>
+          </li>
+        
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category"></p>
+              <p class="item-title"><a href="/be-careful-with-cache/" class="title">Be careful with cache</a></p>
+              <p class="item-date"><time datetime="2017-11-29T13:49:03.000Z" itemprop="datePublished">2017-11-29</time></p>
+            </div>
+          </li>
+        
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category"></p>
+              <p class="item-title"><a href="/back-to-heroku/" class="title">Back to Heroku</a></p>
+              <p class="item-date"><time datetime="2017-10-24T11:21:52.000Z" itemprop="datePublished">2017-10-24</time></p>
+            </div>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/android/">android</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/backend/">backend</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/cordova/">cordova</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/finances/">finances</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/google-app-engine/">google app engine</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/node-js/">node.js</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/opinions/">opinions</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/personal/">personal</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/project-management/">project management</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/software-development/">software development</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/windows/">windows</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/windows-phone/">windows phone</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/xamarin/">xamarin</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+</aside>
+      
+    </div>
+    <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2015 - 2019 Stipe Grbić<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. Theme by <a href="http://github.com/ppoffice">PPOffice</a>
+    </div>
+  </div>
+</footer>
+    
+
+<script>
+  var disqus_shortname = 'stipegrbic';
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+  <title>Migrating from Google App Engine | Stipe Grbić</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="As you might have read in my first blog post, I built a push notifications server on Google App Engine. It was nearly three years ago and at that point it looked nice to me to build a server in Java,">
+<meta name="keywords" content="node.js,backend,google app engine">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Migrating from Google App Engine">
+<meta property="og:url" content="http://stipe.xyz/migrating-from-google-app-engine/index.html">
+<meta property="og:site_name" content="Stipe Grbić">
+<meta property="og:description" content="As you might have read in my first blog post, I built a push notifications server on Google App Engine. It was nearly three years ago and at that point it looked nice to me to build a server in Java,">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="http://stipe.xyz/images/GAE.png">
+<meta property="og:updated_time" content="2019-09-25T11:34:25.663Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Migrating from Google App Engine">
+<meta name="twitter:description" content="As you might have read in my first blog post, I built a push notifications server on Google App Engine. It was nearly three years ago and at that point it looked nice to me to build a server in Java,">
+<meta name="twitter:image" content="http://stipe.xyz/images/GAE.png">
+  
+  
+    <link rel="icon" href="favicon.png">
+  
+  
+ <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600" rel="stylesheet" type="text/css">
+ <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+
+
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+  
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-74043426-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+
+  
+
+  
+</head></html>
+<body>
+  <div id="container">
+    <header id="header">
+  <div id="header-main" class="header-inner">
+    <div class="outer">
+      <a href="/" id="logo"><span class="site-title">Stipe Grbić</span></a>
+      <nav id="main-nav">
+        
+          <a class="main-nav-link" href="/my-work">My work</a>
+        
+          <a class="main-nav-link" href="/tags">Tags</a>
+        
+      </nav>
+      
+        <nav id="sub-nav">
+          <div class="profile" id="profile-nav">
+            <a id="profile-anchor" href="javascript:;"><img class="avatar" src="/css/images/avatar.png"><i class="fa fa-caret-down"></i></a>
+          </div>
+        </nav>
+      
+    </div>
+  </div>
+  <div id="main-nav-mobile" class="header-sub header-inner">
+    <table class="menu outer">
+      <tr>
+        
+          <td><a class="main-nav-link" href="/my-work">My work</a></td>
+        
+          <td><a class="main-nav-link" href="/tags">Tags</a></td>
+        
+      </tr>
+    </table>
+  </div>
+</header>
+
+    <div class="outer">
+      
+        <aside id="profile">
+  <div class="inner profile-inner">
+    <div class="base-info profile-block">
+      <img id="avatar" src="/css/images/avatar.png">
+      <h2 id="name">Stipe Grbić</h2>
+      <h3 id="title">Software Developer</h3>
+      <span id="location"><i class="fa fa-map-marker"></i>Croatia</span>
+      <a id="follow" href="https://twitter.com/_stipegrbic_">FOLLOW</a>
+    </div>
+    <div class="article-info profile-block">
+      <div class="article-info-block">
+        17
+        <span>posts</span>
+      </div>
+      <div class="article-info-block">
+        13
+        <span>tags</span>
+      </div>
+    </div>
+    
+    <div class="contact-info profile-block">
+      <table class="contact-list">
+        <tr>
+          
+          <td><a href="http://twitter.com/_stipegrbic_" target="_blank" title="twitter"><i class="fa fa-twitter"></i></a></td>
+          
+          <td><a href="https://hr.linkedin.com/pub/stipe-grbić/83/45a/450" target="_blank" title="linkedin"><i class="fa fa-linkedin"></i></a></td>
+          
+          <td><a href="/atom.xml" target="_blank" title="rss"><i class="fa fa-rss"></i></a></td>
+          
+        </tr>
+      </table>
+    </div>
+    
+    
+  </div>
+</aside>
+
+      
+      <section id="main"><article id="post-migrating-from-google-app-engine" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Migrating from Google App Engine
+    </h1>
+  
+
+        <div class="article-meta">
+          
+  <div class="article-date">
+    <i class="fa fa-calendar"></i>
+    <a href="/migrating-from-google-app-engine/">
+      <time datetime="2016-02-23T15:05:31.000Z" itemprop="datePublished">2016-02-23</time>
+    </a>
+  </div>
+
+
+          
+        </div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+                
+        <p>As you might have read in my first <a href="/sending-push-notifications-with-google-app-engine">blog post</a>, I built a push notifications server on Google App Engine. It was nearly three years ago and at that point it looked nice to me to build a server in Java, deploy it on Google’s service and not have to pay a cent for it. Recently a few requirements arose and while I didn’t want to make the effort of whole service migration, I eventually did it. Here I’ll write what were the reasons for that and how I managed to do it safe and simple.<br><a id="more"></a></p>
+<h3 id="In-the-beginning"><a href="#In-the-beginning" class="headerlink" title="In the beginning"></a>In the beginning</h3><p>There was a server, and server served users with push notifications, and server would often exceed the Google App Engine quotas. Look at <a href="https://cloud.google.com/appengine/docs/quotas" target="_blank" rel="noopener">this page</a>, there are so many limits it’s really hard to imagine which one you’re gonna hit. For example, sometimes I would hit a datastore operations limit. It’s set to 50,000 operations per day. Now you may think that one datastore operation is one read/write from database, and you’d be wrong. There’s a table on <a href="https://cloud.google.com/appengine/pricing" target="_blank" rel="noopener">this page</a> which describes it in detail, but again, it was a hard time computing how many requests you can get for free. While fixing the problem and trying to minimize the database operations number I noticed a note:</p>
+<blockquote>
+<p>Datastore operations generated by the Datastore Admin and Datastore Viewer count against your application quota.</p>
+</blockquote>
+<p>It means just browsing the data in the admin dashboard can make your app go out of quota limits. Not very nice, but what can you do, I understand that Google has to get the data from database for admin as well as for users. In the meantime I managed to keep the datastore operations under the quota and learned not to browse the data manually that much.</p>
+<h3 id="Fear-of-quotas"><a href="#Fear-of-quotas" class="headerlink" title="Fear of quotas"></a>Fear of quotas</h3><p>For some time everything was fine until application got more users and hit another limit, this time 3,000 HTTP requests/minute. While it was not hard to make the app sleep for a minute when it hit the limit, now I had a real fear of quotas, looking into which one I’m going to hit next. Now you may argue that I could research the quotas better before even implementing the service, but just look at quotas and pricing pages again, it’s not really possible for an app in the making to know all those numbers to compute the pricing. Another remark may be why not pay for it - simply because I didn’t want to pay for something I didn’t have to. The whole server was a basic thing and I rather adapted its behavior to keep it in free tier. I understood this like my pay for the work I did as a hobby project and I liked that feeling more than paying for not doing what I love to do - software development.</p>
+<h3 id="The-technology"><a href="#The-technology" class="headerlink" title="The technology"></a>The technology</h3><p>Let me write a few thing about the technology on the App Engine. While in essence it was Java, Google introduced quite a few own principles in it. For example I had to use their own URL Fetch service for making a simple HTTP requests. This meant that a same thing could work OK in your local environment, but it would fail in production. Another big new thing was the <a href="https://cloud.google.com/datastore/docs/concepts/gql" target="_blank" rel="noopener">Google Query Language</a> (oh, the name) which not being full SQL had serious limitations. Again, as my service wasn’t that much special and advanced I could adapt and use the imposed technology.</p>
+<h3 id="Now-what"><a href="#Now-what" class="headerlink" title="Now what"></a>Now what</h3><p>Fast forward to one month ago and I got a requirement to implement one new API on the server. I knew something was happening with Google App Engine as the dashboard didn’t look as before, some menu items were crossed over and there were notes to switch to the new dashboard. I understood there were quite a few changes and it was rebranded to Google Cloud Platform. Ok, I wasn’t really interested in all the changes, I just wanted to implement the new functionality. So I tried to deploy the new version, but it simply didn’t work, the tutorials written a few years ago don’t work today and there are no migration guides for use old users. That did it and I decided to move away from the whole thing and implement it all from scratch and deploy it somewhere I’ll have more control.<br><img src="../images/GAE.png" alt="Google App Engine dashboard leftovers"></p>
+<h3 id="Node-js-again"><a href="#Node-js-again" class="headerlink" title="Node.js again"></a>Node.js again</h3><p>As I played with Node.js recently the decision was simple. For a service that served quite a few requests, with no internal processing needs and one which I could implement rather fast, Node.js looked like natural choice. And it was, I built a service in a few days of my free time development. I decided to deploy it on OpenShift as it provided a simple and easy to understand pricing and deployment documentation. I admit there were a few issues when something didn’t work in production due to incompatible node modules, but I managed to fix them and learned about importance of versioning.</p>
+<h3 id="Migration-plan"><a href="#Migration-plan" class="headerlink" title="Migration plan"></a>Migration plan</h3><p>I had a few options on how to migrate the data from one platform to another, but since I couldn’t deploy to App Engine any more, I had to think about recreating the data first. So that’s what I did, all the clients had to send its data to the new server and delete it from the old one. Luckily I implemented the delete endpoints on the old server so the users don’t get the notifications from both of them. For the first week only me used the new migrated client to see if any new problem pops up. After that I released the client apps one by one to the public, driven by number of users ascending. It’s now almost a week after the complete migration and all I can say is everything works and I’m happy to have the server under more control than it was on App Engine.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://stipe.xyz/migrating-from-google-app-engine/" data-id="ck0z7mlud000jhsv34fpd3mky" class="article-share-link">Share</a>
+      
+        <a href="http://stipe.xyz/migrating-from-google-app-engine/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/backend/">backend</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/google-app-engine/">google app engine</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/node-js/">node.js</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/xamarin-forms-hands-on/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Xamarin.Forms hands on
+        
+      </div>
+    </a>
+  
+  
+    <a href="/cordova-for-windows-10-troubles/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Cordova for Windows 10 troubles</div>
+    </a>
+  
+</nav>
+
+
+  
+</article>
+
+
+<section id="comments">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+</section>
+      
+        <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">recents</h3>
+    <div class="widget">
+      <ul id="recent-post" class="no-thumbnail">
+        
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category"></p>
+              <p class="item-title"><a href="/data-affects-algorithm-performance/" class="title">Data affects algorithm performance</a></p>
+              <p class="item-date"><time datetime="2019-09-25T11:37:59.000Z" itemprop="datePublished">2019-09-25</time></p>
+            </div>
+          </li>
+        
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category"></p>
+              <p class="item-title"><a href="/an-excel-interop-trick/" class="title">An Excel interop trick</a></p>
+              <p class="item-date"><time datetime="2019-05-09T10:10:04.000Z" itemprop="datePublished">2019-05-09</time></p>
+            </div>
+          </li>
+        
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category"></p>
+              <p class="item-title"><a href="/there-s-no-privacy-on-social-networks/" class="title">There&#39;s no privacy on social networks</a></p>
+              <p class="item-date"><time datetime="2018-01-18T08:32:40.000Z" itemprop="datePublished">2018-01-18</time></p>
+            </div>
+          </li>
+        
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category"></p>
+              <p class="item-title"><a href="/be-careful-with-cache/" class="title">Be careful with cache</a></p>
+              <p class="item-date"><time datetime="2017-11-29T13:49:03.000Z" itemprop="datePublished">2017-11-29</time></p>
+            </div>
+          </li>
+        
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category"></p>
+              <p class="item-title"><a href="/back-to-heroku/" class="title">Back to Heroku</a></p>
+              <p class="item-date"><time datetime="2017-10-24T11:21:52.000Z" itemprop="datePublished">2017-10-24</time></p>
+            </div>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/android/">android</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/backend/">backend</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/cordova/">cordova</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/finances/">finances</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/google-app-engine/">google app engine</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/node-js/">node.js</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/opinions/">opinions</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/personal/">personal</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/project-management/">project management</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/software-development/">software development</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/windows/">windows</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/windows-phone/">windows phone</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/xamarin/">xamarin</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+</aside>
+      
+    </div>
+    <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2015 - 2019 Stipe Grbić<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. Theme by <a href="http://github.com/ppoffice">PPOffice</a>
+    </div>
+  </div>
+</footer>
+    
+
+<script>
+  var disqus_shortname = 'stipegrbic';
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+  <title>Xamarin.Forms hands on | Stipe Grbić</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="For some time I wanted to try Xamarin for multi platform mobile app development. Recently I got very basic app idea suggested by a friend and it looked like a perfect excuse to finally try Xamarin. Of">
+<meta name="keywords" content="windows phone,xamarin,android">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Xamarin.Forms hands on">
+<meta property="og:url" content="http://stipe.xyz/xamarin-forms-hands-on/index.html">
+<meta property="og:site_name" content="Stipe Grbić">
+<meta property="og:description" content="For some time I wanted to try Xamarin for multi platform mobile app development. Recently I got very basic app idea suggested by a friend and it looked like a perfect excuse to finally try Xamarin. Of">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-09-25T11:34:25.668Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Xamarin.Forms hands on">
+<meta name="twitter:description" content="For some time I wanted to try Xamarin for multi platform mobile app development. Recently I got very basic app idea suggested by a friend and it looked like a perfect excuse to finally try Xamarin. Of">
+  
+  
+    <link rel="icon" href="favicon.png">
+  
+  
+ <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600" rel="stylesheet" type="text/css">
+ <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+
+
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+  
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-74043426-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+
+  
+
+  
+</head></html>
+<body>
+  <div id="container">
+    <header id="header">
+  <div id="header-main" class="header-inner">
+    <div class="outer">
+      <a href="/" id="logo"><span class="site-title">Stipe Grbić</span></a>
+      <nav id="main-nav">
+        
+          <a class="main-nav-link" href="/my-work">My work</a>
+        
+          <a class="main-nav-link" href="/tags">Tags</a>
+        
+      </nav>
+      
+        <nav id="sub-nav">
+          <div class="profile" id="profile-nav">
+            <a id="profile-anchor" href="javascript:;"><img class="avatar" src="/css/images/avatar.png"><i class="fa fa-caret-down"></i></a>
+          </div>
+        </nav>
+      
+    </div>
+  </div>
+  <div id="main-nav-mobile" class="header-sub header-inner">
+    <table class="menu outer">
+      <tr>
+        
+          <td><a class="main-nav-link" href="/my-work">My work</a></td>
+        
+          <td><a class="main-nav-link" href="/tags">Tags</a></td>
+        
+      </tr>
+    </table>
+  </div>
+</header>
+
+    <div class="outer">
+      
+        <aside id="profile">
+  <div class="inner profile-inner">
+    <div class="base-info profile-block">
+      <img id="avatar" src="/css/images/avatar.png">
+      <h2 id="name">Stipe Grbić</h2>
+      <h3 id="title">Software Developer</h3>
+      <span id="location"><i class="fa fa-map-marker"></i>Croatia</span>
+      <a id="follow" href="https://twitter.com/_stipegrbic_">FOLLOW</a>
+    </div>
+    <div class="article-info profile-block">
+      <div class="article-info-block">
+        17
+        <span>posts</span>
+      </div>
+      <div class="article-info-block">
+        13
+        <span>tags</span>
+      </div>
+    </div>
+    
+    <div class="contact-info profile-block">
+      <table class="contact-list">
+        <tr>
+          
+          <td><a href="http://twitter.com/_stipegrbic_" target="_blank" title="twitter"><i class="fa fa-twitter"></i></a></td>
+          
+          <td><a href="https://hr.linkedin.com/pub/stipe-grbić/83/45a/450" target="_blank" title="linkedin"><i class="fa fa-linkedin"></i></a></td>
+          
+          <td><a href="/atom.xml" target="_blank" title="rss"><i class="fa fa-rss"></i></a></td>
+          
+        </tr>
+      </table>
+    </div>
+    
+    
+  </div>
+</aside>
+
+      
+      <section id="main"><article id="post-xamarin-forms-hands-on" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Xamarin.Forms hands on
+    </h1>
+  
+
+        <div class="article-meta">
+          
+  <div class="article-date">
+    <i class="fa fa-calendar"></i>
+    <a href="/xamarin-forms-hands-on/">
+      <time datetime="2016-05-05T19:59:03.000Z" itemprop="datePublished">2016-05-05</time>
+    </a>
+  </div>
+
+
+          
+        </div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+                
+        <p>For some time I wanted to try Xamarin for multi platform mobile app development. Recently I got very basic app idea suggested by a friend and it looked like a perfect excuse to finally try Xamarin. Of course that Microsoft recent acquisition of Xamarin and giving the technology to developers for free gave me more reasons to do it.<br><a id="more"></a></p>
+<h3 id="Xamarin-Visual-Studio"><a href="#Xamarin-Visual-Studio" class="headerlink" title="Xamarin + Visual Studio"></a>Xamarin + Visual Studio</h3><p>First things first, I installed Xamarin for Visual Studio and created a new project. In the solution there were Android, iOS, Windows 8 Store and Windows Phone 8.1 apps. I can’t say I was surprised that there was no Windows 10 UWP app, even though I read there is support for Xamarin, maybe it’s too early to abandon Windows (Phone) 8. I didn’t read much of a documentation, but rather learned from code. There was one share component in which you can put all the shared stuff, from DB, networks calls to UI written in XAML. Since my app was so basic and I really wanted to make use of write once run everywhere slogan, I wrote a share page in XAML. There were some usual Android struggles, from installing the SDK, setting up the emulators, to <code>java.lang.OutOfMemoryError: Java heap space</code> error but eventually I got it working. When I realized I was writing C#/XAML code to run on Android it felt like magic, I couldn’t believe this all works. But soon after I decided the app is ready for testing on a device, I just plugged it in and deployed from Visual Studio, it felt so natural. Just to mention I didn’t try iOS because I don’t have an access to a Mac. </p>
+<h3 id="OneSignal"><a href="#OneSignal" class="headerlink" title="OneSignal"></a>OneSignal</h3><p>My app needed the push notifications service. I already imagined writing a Node.js service for this, but before I started that I investigated about existing services which I could use. OneSignal seemed like a good option, it provided the needed functionality, had good documentation, SDKs for many platforms and was free. I started to work with it, and didn’t regret, I got push notifications working rather quick.</p>
+<h3 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h3><p>Of course, main disadvantage of Xamarin.Forms is the number of UI controls you have at your disposal. This means Xamarin.Forms can’t really be used for any advanced application with much UI customizations. And that’s OK, for that purpose there’s pure Xamarin where you can write UI natively on each platform. But for what it meant to be, a faster way to build simple apps for multiple platforms or a prototyping tool Xamarin.Forms works really well.</p>
+<p>My most negative surprise was that Windows Phone was least supported by Xamarin.Forms. I mean, it’s C#/XAML after all and one would expect it works the best for Windows, but when you think about it you can understand that there’s no reason for Xamarin team to make extra effort to support Windows Phone developers who already can develop using C#/XAML. Their main target is iOS and Android and I think they’ve done a great job implementing all that stuff, from Mono, Google Play Services, I-don’t-know-what for iOS, to UI layer and supporting XAML on all three platforms. </p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://stipe.xyz/xamarin-forms-hands-on/" data-id="ck0z7mluq000whsv33m71ns67" class="article-share-link">Share</a>
+      
+        <a href="http://stipe.xyz/xamarin-forms-hands-on/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/android/">android</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/windows-phone/">windows phone</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/xamarin/">xamarin</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/i-ll-miss-windows-phone/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          I&#39;ll miss Windows Phone
+        
+      </div>
+    </a>
+  
+  
+    <a href="/migrating-from-google-app-engine/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Migrating from Google App Engine</div>
+    </a>
+  
+</nav>
+
+
+  
+</article>
+
+
+<section id="comments">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+</section>
+      
+        <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">recents</h3>
+    <div class="widget">
+      <ul id="recent-post" class="no-thumbnail">
+        
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category"></p>
+              <p class="item-title"><a href="/data-affects-algorithm-performance/" class="title">Data affects algorithm performance</a></p>
+              <p class="item-date"><time datetime="2019-09-25T11:37:59.000Z" itemprop="datePublished">2019-09-25</time></p>
+            </div>
+          </li>
+        
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category"></p>
+              <p class="item-title"><a href="/an-excel-interop-trick/" class="title">An Excel interop trick</a></p>
+              <p class="item-date"><time datetime="2019-05-09T10:10:04.000Z" itemprop="datePublished">2019-05-09</time></p>
+            </div>
+          </li>
+        
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category"></p>
+              <p class="item-title"><a href="/there-s-no-privacy-on-social-networks/" class="title">There&#39;s no privacy on social networks</a></p>
+              <p class="item-date"><time datetime="2018-01-18T08:32:40.000Z" itemprop="datePublished">2018-01-18</time></p>
+            </div>
+          </li>
+        
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category"></p>
+              <p class="item-title"><a href="/be-careful-with-cache/" class="title">Be careful with cache</a></p>
+              <p class="item-date"><time datetime="2017-11-29T13:49:03.000Z" itemprop="datePublished">2017-11-29</time></p>
+            </div>
+          </li>
+        
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category"></p>
+              <p class="item-title"><a href="/back-to-heroku/" class="title">Back to Heroku</a></p>
+              <p class="item-date"><time datetime="2017-10-24T11:21:52.000Z" itemprop="datePublished">2017-10-24</time></p>
+            </div>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/android/">android</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/backend/">backend</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/cordova/">cordova</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/finances/">finances</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/google-app-engine/">google app engine</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/node-js/">node.js</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/opinions/">opinions</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/personal/">personal</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/project-management/">project management</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/software-development/">software development</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/windows/">windows</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/windows-phone/">windows phone</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/xamarin/">xamarin</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+</aside>
+      
+    </div>
+    <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2015 - 2019 Stipe Grbić<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. Theme by <a href="http://github.com/ppoffice">PPOffice</a>
+    </div>
+  </div>
+</footer>
+    
+
+<script>
+  var disqus_shortname = 'stipegrbic';
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
