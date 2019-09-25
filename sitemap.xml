@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://stipe.xyz/my-work/index.html</loc>
+    
+    <lastmod>2019-09-25T12:27:37.134Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://stipe.xyz/about-me/index.html</loc>
     
     <lastmod>2019-09-25T12:25:53.596Z</lastmod>
@@ -19,13 +26,6 @@
     <loc>http://stipe.xyz/tags/index.html</loc>
     
     <lastmod>2019-09-25T11:34:25.672Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://stipe.xyz/my-work/index.html</loc>
-    
-    <lastmod>2019-09-25T11:34:25.671Z</lastmod>
     
   </url>
   
@@ -58,14 +58,14 @@
   </url>
   
   <url>
-    <loc>http://stipe.xyz/sending-push-notifications-with-google-app-engine/</loc>
+    <loc>http://stipe.xyz/there-s-no-privacy-on-social-networks/</loc>
     
     <lastmod>2019-09-25T11:34:25.665Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://stipe.xyz/there-s-no-privacy-on-social-networks/</loc>
+    <loc>http://stipe.xyz/sending-push-notifications-with-google-app-engine/</loc>
     
     <lastmod>2019-09-25T11:34:25.665Z</lastmod>
     
@@ -114,13 +114,6 @@
   </url>
   
   <url>
-    <loc>http://stipe.xyz/be-careful-with-cache/</loc>
-    
-    <lastmod>2019-09-25T11:34:25.660Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://stipe.xyz/cordova-for-windows-10-troubles/</loc>
     
     <lastmod>2019-09-25T11:34:25.660Z</lastmod>
@@ -128,14 +121,21 @@
   </url>
   
   <url>
-    <loc>http://stipe.xyz/back-to-heroku/</loc>
+    <loc>http://stipe.xyz/be-careful-with-cache/</loc>
+    
+    <lastmod>2019-09-25T11:34:25.660Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://stipe.xyz/an-excel-interop-trick/</loc>
     
     <lastmod>2019-09-25T11:34:25.659Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://stipe.xyz/an-excel-interop-trick/</loc>
+    <loc>http://stipe.xyz/back-to-heroku/</loc>
     
     <lastmod>2019-09-25T11:34:25.659Z</lastmod>
     
