@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://stipe.xyz/data-affects-algorithm-performance/</loc>
+    
+    <lastmod>2019-09-26T05:42:33.545Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://stipe.xyz/my-work/index.html</loc>
     
     <lastmod>2019-09-25T12:27:37.134Z</lastmod>
@@ -12,13 +19,6 @@
     <loc>http://stipe.xyz/about-me/index.html</loc>
     
     <lastmod>2019-09-25T12:25:53.596Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://stipe.xyz/data-affects-algorithm-performance/</loc>
-    
-    <lastmod>2019-09-25T11:52:30.290Z</lastmod>
     
   </url>
   
@@ -128,14 +128,14 @@
   </url>
   
   <url>
-    <loc>http://stipe.xyz/an-excel-interop-trick/</loc>
+    <loc>http://stipe.xyz/back-to-heroku/</loc>
     
     <lastmod>2019-09-25T11:34:25.659Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://stipe.xyz/back-to-heroku/</loc>
+    <loc>http://stipe.xyz/an-excel-interop-trick/</loc>
     
     <lastmod>2019-09-25T11:34:25.659Z</lastmod>
     

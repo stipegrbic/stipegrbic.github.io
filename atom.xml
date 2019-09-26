@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://stipe.xyz/"/>
-  <updated>2019-09-25T11:52:30.290Z</updated>
+  <updated>2019-09-26T05:42:33.545Z</updated>
   <id>http://stipe.xyz/</id>
   
   <author>
@@ -21,13 +21,13 @@
     <link href="http://stipe.xyz/data-affects-algorithm-performance/"/>
     <id>http://stipe.xyz/data-affects-algorithm-performance/</id>
     <published>2019-09-25T11:37:59.000Z</published>
-    <updated>2019-09-25T11:52:30.290Z</updated>
+    <updated>2019-09-26T05:42:33.545Z</updated>
     
-    <content type="html"><![CDATA[<p>The title is so obvious that you’re probably wondering why I had to write a blog post about it. I’m also surprised how obvious truts must be repeated in order to comply with them. I’ll explain what inspired me.<br><a id="more"></a></p><h3 id="Optimize"><a href="#Optimize" class="headerlink" title="Optimize"></a>Optimize</h3><p>Recently I got a task to optimize a piece of software I worked on. This was a part of code I inherited and wasn’t so familiar with. In short, it had to process a list of data input, compute something and save the information to the database. So simple, right? Of course, it had some complicated computation in each iteration, but to my surprise that wasn’t the bottleneck. The bottlneck was in the storing and retrieving data from database. It was done in each iteration because the previous one affected computation of the next one. So a developer before me decided to use the database as a single point of truth and on each iteration he saved the computed data, and retreived it again in the next iteration. For a short while I was angry with this unknown suspect and couldn’t understand why would he do it like that. Then I realized, he couldn’t see the actual slowness of the application because his database was probably almost empty. The actual customer has a lot of data in it, so in each iteration there’s a lot of data to send and retrieve from database. That’s when I got a bit of understanding for the guy, but also reminded myself, next time when I’m trying to write optimal code, have in mind the actual data might affect its performance.</p>]]></content>
+    <content type="html"><![CDATA[<p>The title is so obvious that you’re probably wondering why I had to write a blog post about it. I’m also surprised how obvious truths must be repeated in order to comply with them. I’ll explain what inspired me.<br><a id="more"></a></p><h3 id="Optimize"><a href="#Optimize" class="headerlink" title="Optimize"></a>Optimize</h3><p>Recently I got a task to optimize a piece of software I worked on. This was a part of code I inherited and wasn’t so familiar with. In short, it had to process a list of data input, compute something and save the information to the database. So simple, right? Of course, it had some complicated computation in each iteration, but to my surprise that wasn’t the bottleneck. The bottlneck was in the storing and retrieving data from database. It was done in each iteration because the previous one affected computation of the next one. So a developer before me decided to use the database as a single point of truth and on each iteration he saved the computed data, and retreived it again in the next iteration. For a short while I was angry with this unknown suspect and couldn’t understand why would he do it like that. Then I realized, he couldn’t see the actual slowness of the application because his database was probably almost empty. The actual customer has a lot of data in it, so in each iteration there’s a lot of data to send and retrieve from database. That’s when I got a bit of understanding for the guy, but also reminded myself, next time when I’m trying to write optimal code, have in mind the actual data might affect its performance.</p>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;The title is so obvious that you’re probably wondering why I had to write a blog post about it. I’m also surprised how obvious truts must be repeated in order to comply with them. I’ll explain what inspired me.&lt;br&gt;
+      &lt;p&gt;The title is so obvious that you’re probably wondering why I had to write a blog post about it. I’m also surprised how obvious truths must be repeated in order to comply with them. I’ll explain what inspired me.&lt;br&gt;
     
     </summary>
     
