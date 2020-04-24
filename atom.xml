@@ -374,9 +374,9 @@
     </summary>
     
     
-      <category term="backend" scheme="http://stipe.xyz/tags/backend/"/>
-    
       <category term="windows phone" scheme="http://stipe.xyz/tags/windows-phone/"/>
+    
+      <category term="backend" scheme="http://stipe.xyz/tags/backend/"/>
     
       <category term="google app engine" scheme="http://stipe.xyz/tags/google-app-engine/"/>
     
