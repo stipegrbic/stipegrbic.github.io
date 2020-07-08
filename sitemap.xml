@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://stipe.xyz/my-first-asp-net-core-mvc-app/</loc>
+    
+    <lastmod>2020-07-08T20:44:13.932Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://stipe.xyz/blocked-prepare-to-unblock/</loc>
     
     <lastmod>2020-07-05T18:42:56.378Z</lastmod>
@@ -65,14 +72,14 @@
   </url>
   
   <url>
-    <loc>http://stipe.xyz/sending-push-notifications-with-google-app-engine/</loc>
+    <loc>http://stipe.xyz/there-s-no-privacy-on-social-networks/</loc>
     
     <lastmod>2019-09-25T11:34:25.665Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://stipe.xyz/there-s-no-privacy-on-social-networks/</loc>
+    <loc>http://stipe.xyz/sending-push-notifications-with-google-app-engine/</loc>
     
     <lastmod>2019-09-25T11:34:25.665Z</lastmod>
     
@@ -86,14 +93,14 @@
   </url>
   
   <url>
-    <loc>http://stipe.xyz/know-your-terminology/</loc>
+    <loc>http://stipe.xyz/migrating-from-google-app-engine/</loc>
     
     <lastmod>2019-09-25T11:34:25.663Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://stipe.xyz/migrating-from-google-app-engine/</loc>
+    <loc>http://stipe.xyz/know-your-terminology/</loc>
     
     <lastmod>2019-09-25T11:34:25.663Z</lastmod>
     
@@ -121,14 +128,14 @@
   </url>
   
   <url>
-    <loc>http://stipe.xyz/be-careful-with-cache/</loc>
+    <loc>http://stipe.xyz/cordova-for-windows-10-troubles/</loc>
     
     <lastmod>2019-09-25T11:34:25.660Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://stipe.xyz/cordova-for-windows-10-troubles/</loc>
+    <loc>http://stipe.xyz/be-careful-with-cache/</loc>
     
     <lastmod>2019-09-25T11:34:25.660Z</lastmod>
     
