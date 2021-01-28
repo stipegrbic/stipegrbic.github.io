@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://stipe.xyz/"/>
-  <updated>2021-01-28T10:20:51.935Z</updated>
+  <updated>2021-01-28T10:25:08.782Z</updated>
   <id>http://stipe.xyz/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Xamarin.Forms again (iOS this time)</title>
-    <link href="http://stipe.xyz/xamarin-forms-again-ios-this-time/"/>
-    <id>http://stipe.xyz/xamarin-forms-again-ios-this-time/</id>
+    <title>My first iOS development experience</title>
+    <link href="http://stipe.xyz/my-first-ios-development-experience/"/>
+    <id>http://stipe.xyz/my-first-ios-development-experience/</id>
     <published>2021-01-28T09:34:43.000Z</published>
-    <updated>2021-01-28T10:20:51.935Z</updated>
+    <updated>2021-01-28T10:25:08.782Z</updated>
     
     <content type="html"><![CDATA[<p>Due to some circumstances, I came in a possession of a Mac mini. This meant only one thing - I had to create an iOS app. My way of thinking was, let’s go completely native - Swift can’t be that hard to learn. Create WatchOS app - I miss a lot of functionality on the Apple Watch. After some attempts and giving up I turned to the good old C# and Xamarin.Forms.<br><a id="more"></a></p><h3 id="iOS-native-development"><a href="#iOS-native-development" class="headerlink" title="iOS native development"></a>iOS native development</h3><p>Yes, my idea was to create a basic app and was thinking just create a native app from the XCode template, and it shouldn’t be too hard to learn Swift and SwiftUI in the process. The thing is, it’s neither so easy and with my spare time very limited these days, I couldn’t afford to go this way. In addition, my Mac mini is quite slow, and made the developemt (attempt) painfully slow.</p><h3 id="Xamarin-Forms"><a href="#Xamarin-Forms" class="headerlink" title="Xamarin.Forms"></a>Xamarin.Forms</h3><p>Ok, so I concluded it’s better to go the faster way. Using my primary programming language and my primary development PC should speed things up. For a basic app I wanted to created Xamarin.Forms was a good fit, I didn’t miss any functionality from native development. To be fair, the app I want to create was a port of one of my Windows Phone apps and I could reuse most of the bussiness logic code - speed++.</p><p>Using Xamarin.Forms for iOS on a Windows machine works. That’s all :) it works, job can be done but there are a lot of obstacles a native development doesn’t have. Connection to a Mac agent is unstable, often needs a machine restart and just like that you spend 10 minutes and work flow. Deploying to a simulator or a device works good enough, it is a bit slow, but doesn’t get you nervous.</p><h3 id="Outcome"><a href="#Outcome" class="headerlink" title="Outcome"></a>Outcome</h3><p>I created a complete app, but didn’t submit it to the store due to it not being production ready, and my wish not to deal with everything that production involves - users, expectations, fixes and maintenance. The app required to have a push notification server, so I reused and expanded my <a href="http://stipe.xyz/back-to-heroku">existing server</a> used for push notification with APNS support. Of course, since I didn’t work on the server for a few years, Heroku wanted me to <a href="https://devcenter.heroku.com/articles/upgrading-to-the-latest-stack" target="_blank" rel="noopener">migrate to the new stack</a> before I could make new deployments.</p><p>Since I’m an iPhone, Apple Watch and iPad user, and I feel the need to be able to make an app for my own needs, now that I can do it the feeling is great. The unexpected work on the server also refreshed my Node.js knowledge and I felt satisfaction upon successful migration of the server.</p>]]></content>
     
@@ -34,9 +34,9 @@
     
       <category term="software development" scheme="http://stipe.xyz/tags/software-development/"/>
     
-      <category term="xamarin" scheme="http://stipe.xyz/tags/xamarin/"/>
-    
       <category term="iOS" scheme="http://stipe.xyz/tags/ios/"/>
+    
+      <category term="xamarin" scheme="http://stipe.xyz/tags/xamarin/"/>
     
   </entry>
   
