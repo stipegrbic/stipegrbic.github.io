@@ -2,7 +2,7 @@
 title: There's no privacy on social networks
 date: 2018-01-18 09:32:40
 categories: [personal, opinions]
-tags: [personal, opinions]
+tags: [personal, opinions, social networks, privacy]
 ---
 This might sound so obvious to people who know how the Internet works, but I think to quite a lot of people this might come as a shock. All the privacy settings on social networks and forums are worthless. I'll explain why.
 <!--more-->

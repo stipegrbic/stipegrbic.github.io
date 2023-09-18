@@ -2,7 +2,7 @@
 title: Back to Heroku
 date: 2017-10-24 13:21:52
 categories: [software development, node.js]
-tags: [software development, node.js, backend]
+tags: [software development, node.js, backend, heroku, javascript]
 ---
 A year and a half ago I moved my backend service from Heroku to Openshift. The reasons were that it didn't put services to sleep state in free tier. At that time it just looked it offers more for the same price. A month ago Openshift upgraded their service from version 2 to 3, or something like that. They wanted me to do the migration of my service. This is what happened next :) ...
 <!--more-->

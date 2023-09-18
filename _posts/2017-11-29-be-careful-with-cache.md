@@ -2,7 +2,7 @@
 title: Be careful with cache
 date: 2017-11-29 14:49:03
 categories: [software development, opinions]
-tags: [software development, opinions]
+tags: [software development, opinions, cache]
 ---
 There's a well known saying that goes like this: There are only two hard things in Computer Science: cache invalidation and naming things *. This is a post about the first one.
 

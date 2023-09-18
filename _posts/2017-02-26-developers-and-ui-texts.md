@@ -2,7 +2,7 @@
 title: Developers and UI texts
 date: 2017-02-26 20:17:19
 categories: [software development, opinions]
-tags: [software development, opinions]
+tags: [software development, opinions, UX]
 ---
 This post is inspired by uninformative user facing texts in software. Being a software developer, I know that there are situations when we are not aware of how meaningless the text we write can be to the rest of the world. This is an excuse post to all the users affected by such messages and also a reminder to other developers that they should be careful how they communicate with their users.
 <!--more-->

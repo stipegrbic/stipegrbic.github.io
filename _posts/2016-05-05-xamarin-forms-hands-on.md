@@ -2,7 +2,7 @@
 title: Xamarin.Forms hands on
 date: 2016-05-05 21:59:03
 categories: [software development, xamarin]
-tags: [software development, xamarin, windows phone, android]
+tags: [software development, xamarin, windows phone, android, C#]
 ---
 For some time I wanted to try Xamarin for multi platform mobile app development. Recently I got very basic app idea suggested by a friend and it looked like a perfect excuse to finally try Xamarin. Of course that Microsoft recent acquisition of Xamarin and giving the technology to developers for free gave me more reasons to do it.
 <!--more-->

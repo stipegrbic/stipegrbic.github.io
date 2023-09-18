@@ -2,7 +2,7 @@
 title: My first ASP.NET Core MVC app
 date: 2020-07-08 22:23:50
 categories: [software development, web]
-tags: [software development, web]
+tags: [software development, web, C#, side projects, azure]
 ---
 As you might have noticed I created a Windows application to calculate time span between two dates [Event Timing](https://stipe.xyz/my-work/). Since I'm not always sitting by my Windows PC, I got the need to have this little calculator app available on the web. This evening the web app went from idea to production. 
 <!--more-->

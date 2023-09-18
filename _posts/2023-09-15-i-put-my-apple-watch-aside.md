@@ -2,7 +2,7 @@
 title: I put my Apple Watch aside
 date: 2023-09-15 09:07:36
 categories: [personal, opinions]
-tags: [personal, opinions]
+tags: [personal, opinions, apple, watch, smartwatch, devices]
 ---
 For a while, I was starting to get bored with Apple Watch. That combined with the fact I was never fond of it's looks and I got a bit tired of vibrating my wrist resulted in putting it aside. I'm now wearing my old-school stainless steel watch.
 <!--more-->

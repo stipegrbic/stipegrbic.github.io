@@ -2,7 +2,7 @@
 title: Cordova for Windows 10 troubles
 date: 2016-01-28 15:51:59
 categories: [software development, windows]
-tags: [software development, windows, cordova]
+tags: [software development, windows, cordova, parse, javascript, UWP]
 ---
 One of my recent tasks at work was to port a mobile web app to Windows 10 UWP. The app was built using Apache Cordova, and as Cordova and Microsoft worked together to support Windows 10, this should be pretty straightforward. Nobody really expected it to be as simple as it was advertised, and I was ready for the multi platform development troubles.
 <!--more-->

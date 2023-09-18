@@ -2,7 +2,7 @@
 title: Playing with Azure WebJobs
 date: 2022-05-06 10:45:30
 categories: [software development, web]
-tags: [azure, asp.net, backend]
+tags: [azure, asp.net, backend, side projects]
 ---
 In case you were following my posts, you are aware about my project [Days From Today](https://stipe.xyz/posts/my-first-asp-net-core-mvc-app/). It's a port of my Windows app which is much more functional, but it's still only a Windows app and I wanted my web version to be as functional as a Windows app. This time I tried to add email reminders about events.
 <!--more-->

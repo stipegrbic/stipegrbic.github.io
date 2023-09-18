@@ -2,7 +2,7 @@
 title: Side projects (sometimes) pay off
 date: 2022-02-22 10:11:39
 categories: [software development, node.js]
-tags: [node.js, backend, software development]
+tags: [node.js, backend, software development, side projects, javascript]
 ---
 Having a side project every now and then is beneficial in many ways. Recently I had such positive experience from some of my side projects that are more than five years old. My manager asked me "Hey do you have some node.js experience?" and it was such a good feeling to answer "yes".
 <!--more-->

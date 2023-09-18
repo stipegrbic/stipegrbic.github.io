@@ -2,7 +2,7 @@
 title: Working with manipulation events on Windows Phone
 date: 2014-10-22 20:10:37
 categories: [software development, windows phone]
-tags: [software development, windows phone]
+tags: [software development, windows phone, C#, windows phone]
 ---
 Recently I worked on a Windows Phone app that had to allow users to move objects on the screen. More precisely, users would need to drag images on either left or right side. So, I just went by putting Image into a Border with CompositeTransform and then listened to Manipulation events. The thing I noticed is that it just isn't really smooth, had a lag and I didn't want users to have that experience. 
 <!--more-->

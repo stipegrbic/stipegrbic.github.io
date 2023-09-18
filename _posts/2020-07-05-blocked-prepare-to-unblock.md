@@ -2,7 +2,7 @@
 title: Blocked? Prepare to unblock
 date: 2020-07-05 20:15:04
 categories: [software development, opinions]
-tags: [software development, opinions]
+tags: [software development, opinions, management]
 ---
 Many times during my career I’ve been blocked from completing my work. Be it feature implementation, bug fix or some kind of software migration I couldn’t finish until someone else does their job first. What to do during this time? 
 <!--more-->

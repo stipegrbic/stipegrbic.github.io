@@ -2,7 +2,7 @@
 title: My first iOS development experience
 date: 2021-01-28 10:34:43
 categories: [software development, xamarin]
-tags: [iOS, xamarin, software development]
+tags: [iOS, xamarin, software development, C#]
 ---
 Due to some circumstances, I came in a possession of a Mac mini. This meant only one thing - I had to create an iOS app. My way of thinking was, let's go completely native - Swift can't be that hard to learn. Create WatchOS app - I miss a lot of functionality on the Apple Watch. After some attempts and giving up I turned to the good old C# and Xamarin.Forms.
 <!--more-->
