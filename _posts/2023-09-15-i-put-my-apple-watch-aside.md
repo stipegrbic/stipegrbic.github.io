@@ -32,5 +32,5 @@ I'll list here stuff I was thinking about while making this decision:
     
 To conclude, all of the Apple Watch features are available on the phone. It's just that you need to have your phone with you. The biggest advantage of the Apple Watch is that you don't need to carry your phone around the house and still be connected and present in your digital world, be it personal or work-related. The notifications are also one of the biggest disadvantages for me as I started to notice that every time my wrist vibrates I get stressed, and the majority of times it was not worth it.
 
-I'm now wearing my old school watch for a week and started to appreciate its simplicity more. I still need to get used to check my phone for notifications, and not displace it for the major part of the day when home like I used to before.
+I'm now wearing my old school watch for a week and started to appreciate its simplicity more. I still need to get used to check my phone for notifications, and not displace it for the major part of the day when home like I used to before. Still, I can use my Apple Watch when needed, for alarms, activity tracking or something similar, I'm interested in how often this will happen.
 
