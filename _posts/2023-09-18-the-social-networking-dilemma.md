@@ -14,3 +14,6 @@ The reason why I didn't do this before is I dislike Facebook, or Meta if you lik
 Another network I'm considering is Mastodon. I only know it exists as an alternative to Twitter. It's probably better at privacy, but I'm not sure about the user base. If I'm trying to get to interesting people and content then it may not be here. I'm also aware Mastodon is geeky, they have the word "server" in the app description :)
 
 The thing is, I don't even have or want to spend a significant amount of time on social networks, I can only trade part of my time spent on Twitter for some other network and try it out. I'll update you when something happens on this matter.
+
+\[UPDATE\]
+After creating an account on Mastodon and trying it out for a few days, I have just delete the account. There's nothing interesting there for me unfortunately. In the meantime I created an Instagram account and followed two accounts which I knew were there but not on Twitter. Let's see if it will take me to find more content on Instagram than on Twitter.
