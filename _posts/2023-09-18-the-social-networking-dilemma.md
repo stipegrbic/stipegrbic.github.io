@@ -17,3 +17,7 @@ The thing is, I don't even have or want to spend a significant amount of time on
 
 \[UPDATE\]
 After creating an account on Mastodon and trying it out for a few days, I have just delete the account. There's nothing interesting there for me unfortunately. In the meantime I created an Instagram account and followed two accounts which I knew were there but not on Twitter. Let's see if it will take me to find more content on Instagram than on Twitter.
+
+\[UPDATE 2\]
+It seems Instagram isn't working for me as I expected. As I can see everyday people scrolling and browsing Instagram and looking at all those cool stories (and ads) I wanted to try that experience. But after adding a few accounts that interest me, it didn't take me into that experience. I expected it will throw more and more content and accounts that I would want to follow but it didn't and soon it started to feel boring. To be honest, I didn't install the app on my phone and used it only on my laptop, but nevertheless I think if it was the right app for me to use it would become more interesting, not less. I might check it out here and there because some interesting people are present only on Instagram but I dont't think it will ever become a go-to app for me. 
+in the meantime, I'm unfollowing some accounts on Twitter because I noticed they became not interesting to me. I feel like some day I'll also not see enough of content there to check open the app multiple times per day. For now I feel like maybe writing more here on my personal page might be the best option.
