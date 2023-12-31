@@ -10,4 +10,6 @@ It's a bit more than 12 years that I'm professionally working as a software engi
 
 When I worked in the office, traveling to work each morning wasn't a hassle when I knew where I'm going. I'll see a lot of happy and positive people, we'll do some work together, talk about all things, play some table tennis, have lunch, drink coffee, do some more work and go home (after maybe a drink or two). Now that I'm working remotely, I don't have these benefits, but still feel great talking with the people I work with. There are still non-work related topics, people are genuinely interested in me as a person, and managers don't make any pressure with silly requirements or deadlines.
 
+It's blameless culture where wenall work together for s common goal. When someone makes a mistake there's a whole team and company to support you instead of blame you. This is especially important for younger professionals who need to make more mistakes in order to learn and grow. Having supportive environment is crucial for them to succeed. 
+
 I know there are companies even in software development industry that are not that pleasant to work in, and I'm writing this post also to those people that work there. To raise awareness that there are a lot of companies with great working atmosphere, a majority I would say.
