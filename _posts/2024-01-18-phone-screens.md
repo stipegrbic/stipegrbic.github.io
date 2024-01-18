@@ -1,6 +1,6 @@
 ---
 title: Phone screens
-date: 2024-01-18 22:44:03
+date: 2024-01-18 21:44:03
 categories: [personal, opinions]
 tags: [opinions, smartphones]
 ---
