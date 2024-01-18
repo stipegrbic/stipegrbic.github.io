@@ -1,6 +1,6 @@
 ---
 title: iPhone Face ID vs. touch ID
-date: 2023-01-18 23:10:02
+date: 2024-01-18 22:10:02
 categories: [personal, opinions]
 tags: [iphone, face id, touch id, usability]
 ---
