@@ -18,6 +18,9 @@ content:
       - name: tags
         label: Tags
         type: collection
+      - name: body
+        label: Body
+        type: rich-text
 media:
   input: assets/img
   output: _site/assets/img
