@@ -30,4 +30,4 @@ content:
           extensions: [ jpg, jpeg, png ]
 media: 
   input: assets/img
-  output: _site
+  output: _site/assets/img
