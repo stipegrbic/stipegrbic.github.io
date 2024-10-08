@@ -26,12 +26,9 @@ content:
         type: image
         list: true
         options:
-          path: /_site/assets/img
+          path: assets/img
           extensions: [ jpg, jpeg, png ]
   - name: blurbs
     label: Blurbs
     type: collection
-media:
-  input: /assets/img
-  output: /_site/assets/img
-  
+media: assets/img
