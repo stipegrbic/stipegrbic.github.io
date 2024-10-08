@@ -33,5 +33,5 @@ content:
     type: collection
 media:
   input: assets/img
-  output: _site/assets/img
+  output: assets/img
   
