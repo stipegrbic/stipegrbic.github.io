@@ -4,7 +4,7 @@ content:
     type: collection
     path: '_posts'
     view:
-      fields: [ title, date ]
+      fields: [ title, date, categories, tags ]
     fields:
       - name: title
         label: Title
@@ -12,6 +12,12 @@ content:
       - name: date
         label: Date
         type: date
+      - name: categories
+        label: Categories
+        type: collection
+      - name: tags
+        label: Tags
+        type: collection
 media:
   input: assets/img
   output: _site/assets/img
