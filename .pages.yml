@@ -26,7 +26,7 @@ content:
         type: image
         list: true
         options:
-          path: /assets/img
+          path: /_site/assets/img
           extensions: [ jpg, jpeg, png ]
   - name: blurbs
     label: Blurbs
