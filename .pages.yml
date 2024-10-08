@@ -13,4 +13,6 @@ content:
         label: Title
         type: string
 media:
-  - input: assets/img
+  input: assets/img
+  output: _site/assets/img
+  
