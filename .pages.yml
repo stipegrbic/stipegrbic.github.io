@@ -21,6 +21,13 @@ content:
       - name: body
         label: Body
         type: rich-text
+      - name: image
+        label: Image
+        type: image
+        list: true
+        options:
+          path: assets/img
+          extensions: [ jpg, jpeg, png ]
   - name: blurbs
     label: Blurbs
     type: collection
