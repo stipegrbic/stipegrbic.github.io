@@ -21,6 +21,9 @@ content:
       - name: body
         label: Body
         type: rich-text
+  - name: blurbs
+    label: Blurbs
+    type: collection
 media:
   input: assets/img
   output: _site/assets/img
