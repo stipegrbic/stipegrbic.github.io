@@ -28,4 +28,6 @@ content:
         options:
           path: assets/img
           extensions: [ jpg, jpeg, png ]
-media: _site/assets/img
+media: 
+  input: assets/img
+  output: _site
