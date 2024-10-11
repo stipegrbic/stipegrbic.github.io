@@ -5,7 +5,7 @@ layout: default
 
 {% include lang.html %}
 
-{% assign thoughts = site.thoughts | orderby: 'date' %}
+{% assign thoughts = site.thoughts | sort: 'date' %}
 
 <h1 class="ps-lg-2">
     <i class="fa fa-lightbulb fa-fw text-muted"></i>
