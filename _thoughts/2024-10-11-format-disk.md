@@ -1,6 +1,7 @@
 ---
 title: format-disk
 date: 2024-09-25
+layout: thought
 image:
   - /assets/img/GYRkI00XYAAp6Rp.jpeg
 ---
