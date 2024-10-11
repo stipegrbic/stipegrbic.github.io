@@ -43,7 +43,10 @@ content:
         type: string
       - name: date
         label: Date
-        type: date      
+        type: date 
+      - name: layout
+        label: Layout
+        type: string
       - name: body
         label: Body
         type: rich-text
