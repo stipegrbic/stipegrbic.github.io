@@ -55,7 +55,7 @@
       .card-text.content {
         @extend %muted;
 
-        p {
+        p.text-clip {
           @extend %text-clip;
 
           line-height: 1.5;

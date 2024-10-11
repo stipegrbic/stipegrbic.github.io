@@ -1,7 +1,7 @@
 ---
 title: My work
 icon: fas fa-laptop-code
-order: 4
+order: 5
 ---
 Here I'll list some of my projects I did in my free time. The work I do on my day job you can find elsewhere :)
 

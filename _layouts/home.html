@@ -59,7 +59,7 @@ layout: default
           <h1 class="card-title my-2 mt-md-0">{{ post.title }}</h1>
 
           <div class="card-text content mt-0 mb-2">
-            <p>
+            <p class="text-clip">
               {% include no-linenos.html content=post.content %}
               {{ content | markdownify | strip_html | truncate: 200 | escape }}
             </p>
