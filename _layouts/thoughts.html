@@ -5,13 +5,15 @@ layout: default
 
 {% include lang.html %}
 
+{% assign thoughts = site.thoughts | sort: 'date'| reverse %}
+
 <h1 class="ps-lg-2">
     <i class="fa fa-lightbulb fa-fw text-muted"></i>
     {{ page.title }}
   </h1>
 
 <div id="post-list" class="flex-grow-1 pe-xl-2">
-  {% for item in site.thoughts %}
+  {% for item in thoughts %}
     <article class="card-wrapper">
       <a href="{{ item.url | relative_url }}" class="card post-preview flex-md-row-reverse">
         {% if item.image %}
