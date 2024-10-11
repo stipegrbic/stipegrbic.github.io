@@ -7,6 +7,12 @@ layout: default
 
 {% assign thoughts = site.thoughts | sort: 'date' %}
 
+{% if default_num > 0 %}
+  {% for i in (default_beg..default_end) %}
+    {% assign thoughts = thoughts | push: default[i] %}
+  {% endfor %}
+{% endif %}
+
 <h1 class="ps-lg-2">
     <i class="fa fa-lightbulb fa-fw text-muted"></i>
     {{ page.title }}
