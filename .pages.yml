@@ -21,6 +21,9 @@ content:
       - name: body
         label: Body
         type: rich-text
+      - name: layout
+        label: Layout
+        type: string
       - name: image
         label: Image
         type: image
