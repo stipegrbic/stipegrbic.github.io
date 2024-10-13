@@ -6,7 +6,7 @@ tags: social networks, twitter
 layout: post
 ---
 Ok, the time has come for me to stop using twitter. It’s been long time live or die relationship, but these days a sad thing happened that triggered me to do kill it.
-
+<!--more-->
 I’ve never liked social networks that much, I’m just not into exposing my personal life that much. That’s why I opened my twitter account relatively late, in 2012 when everyone was on Facebook anyway. I wanted a small, not bloated (remember games on facebook?) social network that doesn’t try to live your life for you, but a place where I could get a lot of short and fast information and also share some interesting thoughts.
 
 It worked relatively well for me, I found a short circle of interesting people to follow and also shared my thoughts here and there. It never was that important to me anyway, but I grew a habit of scrolling through it daily. Years were passing by and my feeling was always like twitter never took advantage of its potential. I was hoping it will start gaining popularity and will get better. Then after Elon Musk bought it I knew it’s now or never. It will grow into something more, or just finally die. Unfortunately, it didn’t get any better, in a lot of ways it got worse and for me it’s now dead.
