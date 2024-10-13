@@ -7,7 +7,7 @@ layout: page
 <header>
     <div class="post-meta text-muted">
         
-      {% if page.image %}
+    {% if page.image %}
       {% capture src %}src="{{ page.image.path | default: page.image }}"{% endcapture %}
       {% capture class %}class="preview-img{% if page.image.no_bg %}{{ ' no-bg' }}{% endif %}"{% endcapture %}
       {% capture alt %}alt="{{ page.image.alt | xml_escape | default: "Preview Image" }}"{% endcapture %}
@@ -19,10 +19,12 @@ layout: page
     {% endcapture %}
 
       <div class="mt-3 mb-3">
-        <img {{ src }} {{ class }} {{ alt }} w="1200" h="630" {{ lqip | strip }}>
-        {%- if page.image.alt -%}
+        <a href="{{ page.image }}" class="popup img-link preview-img">
+          <img {{ src }} class="ls-is-cached lazyloaded" data-src="{{page.image}}" {{ alt }} width="1200" height="630" {{ lqip | strip }}>
+          {%- if page.image.alt -%}
           <figcaption class="text-center pt-2 pb-2">{{ page.image.alt }}</figcaption>
-        {%- endif -%}
+          {%- endif -%}
+        </a>
       </div>
     {% endif %}
         
