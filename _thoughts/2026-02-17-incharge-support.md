@@ -53,6 +53,6 @@ If you have ideas, suggestions, or improvements you’d like to see, we’d love
 * * *
 
 Thank you for being part of InCharge.  
-Stay focused. Stay calm. Stay in charge.  
-  
-App icon is from <a href="[https://www.flaticon.com/free-icons/thunder](https://www.flaticon.com/free-icons/thunder)" title="thunder icons">Thunder icons created by Miftakhul Rizky - Flaticon</a>
+Stay focused. Stay calm. Stay in charge.
+
+App icon is from [Thunder icons created by Miftakhul Rizky - Flaticon]([https://www.flaticon.com/free-icons/thunder]\(https://www.flaticon.com/free-icons/thunder\))
