@@ -55,4 +55,4 @@ If you have ideas, suggestions, or improvements you’d like to see, we’d love
 Thank you for being part of InCharge.  
 Stay focused. Stay calm. Stay in charge.
 
-App icon is from [Thunder icons created by Miftakhul Rizky - Flaticon]([https://www.flaticon.com/free-icons/thunder]\(https://www.flaticon.com/free-icons/thunder\))
+App icon is from <a href="[https://www.flaticon.com/free-icons/bolt](https://www.flaticon.com/free-icons/bolt)" title="bolt icons">Bolt icons created by Fir3Ghost - Flaticon</a>
