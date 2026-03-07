@@ -3,88 +3,67 @@ title: littlemedic-eula
 date: 2020-01-16
 layout: thought
 ---
-LITTLEMEDIC – END USER LICENSE AGREEMENT (EULA)
+## Updated EULA / Terms of Use
 
-Last updated: March 2026
+**Last Updated:** March 2026 · Version 1.1
 
-IMPORTANT: LittleMedic is an informational tool for tracking children's health data. It is NOT a medical device and does not provide medical advice, diagnosis, or treatment. Always consult a qualified healthcare professional for medical decisions.
+### 1\. Agreement
 
-1\. AGREEMENT
+By downloading or installing LittleMedic you accept these terms. This agreement is between you and Stipe Grbić, not Apple Inc. or Google LLC.
 
-By downloading, installing, or using LittleMedic ("the App"), you agree to be bound by this End User License Agreement. If you do not agree, do not use the App. This Agreement is between you and Stipe Grbić ("Licensor"), not with Apple Inc. Apple is not responsible for the App or its content.
+### 2\. License Grant
 
-2\. LICENSE GRANT
+Licensor grants you a limited, non-exclusive, non-transferable, revocable license to use LittleMedic on devices you own or control, subject to the applicable platform's terms.
 
-The Licensor grants you a limited, non-exclusive, non-transferable, revocable license to use the App on any Apple-branded device that you own or control, subject to the Apple Media Services Terms and Conditions.
+### 3\. Restrictions
 
-3\. RESTRICTIONS
+You may not copy, modify, reverse engineer, rent, sublicense, or use the app in any unlawful manner.
 
-You may not:
+### 4\. In-App Purchases & Subscriptions
 
-\- Copy, modify, or distribute the App or any portion of it
+Premium features are available via monthly, annual, or lifetime purchase. Subscriptions auto-renew unless cancelled at least 24 hours before the renewal date. No refunds are provided for unused portions of a subscription period except where required by law.
 
-\- Reverse engineer, decompile, or disassemble the App
+### 5\. Health Disclaimer
 
-\- Rent, lease, lend, sell, or sublicense the App
+LittleMedic provides organisational and informational tools only, not medical advice. Always consult a licensed healthcare professional for medical decisions. The app is not a medical device.
 
-\- Use the App for any unlawful purpose
+### 6\. Data & Privacy
 
-\- Remove or alter any proprietary notices on the App
+**Local data** remains on your device and is never accessed by the developer.
 
-4\. IN-APP PURCHASES & SUBSCRIPTIONS
+**iCloud Sync (Premium)** stores data in your personal iCloud account only. The developer has no access.
 
-The App offers optional premium features through in-app purchases:
+**Family Sync (Premium)** is an optional feature that transmits your health records (medications, appointments, illnesses, children profiles) to a cloud server (Supabase) in order to share them with members of a family group you create or join. By enabling Family Sync you acknowledge:
 
-\- Monthly subscription: billed monthly, renews automatically until cancelled
+*   Data will leave your device and be stored on third-party infrastructure
+    
+*   Other members of your group will have read access to the shared data
+    
+*   You are responsible for who you invite to your group
+    
+*   You can delete all server-side data at any time via Settings → Family Sync → Delete Account
+    
 
-\- Annual subscription: billed once per year, renews automatically until cancelled
+### 7\. Intellectual Property
 
-\- Lifetime: one-time purchase, no recurring charges
+All rights, title, and interest in LittleMedic remain with Stipe Grbić.
 
-Subscriptions automatically renew unless cancelled at least 24 hours before the end of the current period. Manage and cancel subscriptions in your Apple ID account settings. No refunds are provided for unused portions of a subscription period, except as required by applicable law.
+### 8\. Warranty Disclaimer
 
-5\. HEALTH DISCLAIMER
+The app is provided "as is" without warranties of any kind.
 
-The App is for informational and organizational purposes only.
+### 9\. Limitation of Liability
 
-\- The App does not provide medical advice of any kind
+To the maximum extent permitted by law, Stipe Grbić is not liable for any indirect, incidental, or consequential damages arising from your use of the app.
 
-\- Information entered should not replace professional medical advice
+### 10\. Termination
 
-\- The Licensor is not liable for any health decisions made based on information stored in the App
+This license terminates automatically if you breach these terms. Upon termination you must stop using and delete the app.
 
-\- Always consult a licensed physician or healthcare professional
+### 11\. Governing Law
 
-6\. DATA & PRIVACY
+These terms are governed by the laws of Croatia.
 
-All health data is stored locally on your device. If you enable iCloud Sync (premium feature), data is synced to your personal iCloud account and is not accessible to the Licensor. The App does not collect, transmit, or share your personal health data with third parties.
-
-7\. INTELLECTUAL PROPERTY
-
-The App and all its content are owned by the Licensor and protected by copyright and other intellectual property laws.
-
-8\. DISCLAIMER OF WARRANTIES
-
-The App is provided "as is" without warranties of any kind. The Licensor does not warrant that the App will be uninterrupted or error-free.
-
-9\. LIMITATION OF LIABILITY
-
-To the maximum extent permitted by law, the Licensor shall not be liable for any indirect, incidental, or consequential damages resulting from your use or inability to use the App.
-
-10\. TERMINATION
-
-Your rights under this Agreement terminate automatically if you fail to comply with its terms.
-
-11\. MAINTENANCE & SUPPORT
-
-The Licensor is solely responsible for providing maintenance and support for the App. Apple has no obligation to provide any maintenance or support.
-
-12\. GOVERNING LAW
-
-This Agreement is governed by the laws of the Republic of Croatia.
-
-13\. CONTACT
+### 12\. Contact
 
 [stipegrbic@hotmail.com](mailto:stipegrbic@hotmail.com)
-
-© 2026 Stipe Grbić. All rights reserved.
