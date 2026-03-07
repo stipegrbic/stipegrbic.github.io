@@ -4,82 +4,56 @@ date: 2020-01-23
 layout: thought
 ---
 ```markdown
-# LittleMedic Privacy Policy
+Updated Privacy Policy
+Effective date: March 7, 2026 · Version 1.1
 
-**Effective date:** February 22, 2026 · Version 1.0
+1. Who We Are
+LittleMedic is developed by Stipe Grbić and designed to help parents and caregivers track children's health information including illnesses, medications, and medical appointments.
 
-> **Summary:** LittleMedic stores all data *exclusively on your device*. We do not collect, transmit, or share any personal or health information with any server, third party, or developer.
+2. Data We Collect
+Local storage (all users)
+The app stores on your device:
 
----
+Children's names, birthdates, and profile information
+Illness records (symptoms, dates, notes)
+Medication records (name, dosage, schedule, linked illnesses)
+Medical appointment records (type, date, time, clinic, doctor, notes)
+Medication administration logs
+iCloud Sync (Premium, optional)
+When enabled, the above data is backed up to your personal iCloud account. The developer has no access to your iCloud data.
 
-## 1. Who We Are
+Family Sync (Premium, optional)
+When you choose to join or create a Family Sync group, the above health data is transmitted to and stored on Supabase-hosted servers (hosted on AWS infrastructure) for the purpose of sharing data with other members of your group. The following applies:
 
-LittleMedic ("the App", "we", "our") is developed and maintained by Stipe Grbić (stipegrbic@hotmail.com). The App is designed to help parents and caregivers track the health of their children, including illnesses, medications, and medical appointments.
+Data is only uploaded when you explicitly enable Family Sync
+Data is accessible only to members of your family group
+You can leave a group or delete all synced data at any time via Settings → Family Sync → Delete Account
+Supabase's privacy policy applies to the infrastructure layer: supabase.com/privacy
+3. Data We Do NOT Collect
+We do not collect analytics, crash reports, usage statistics, use advertising SDKs or tracking libraries, require sign-in for core functionality, or access contacts, camera (beyond photo attachment), microphone, or location. Family Sync does not require or store an email address or real name — only a group code you choose.
 
-## 2. Data We Collect
+4. Notifications
+Notifications operate locally via the operating system's APIs with no server transmission required.
 
-The App may store the following data that you choose to enter:
+5. Data Export and Import
+Users control backup file creation and storage location. The app does not automatically upload files unless Family Sync or iCloud Sync is explicitly enabled.
 
-- Children's names, birthdates, and profile information
-- Illness records (symptoms, dates, notes)
-- Medication records (name, dosage, schedule, linked illnesses)
-- Medical appointment records (type, date, time, clinic, doctor, notes)
-- Medication administration logs
+6. Children's Privacy
+The app targets parents and caregivers, not children. No data about children is shared with third parties. Family Sync data is shared only with other members of the family group you create or join.
 
-**All of this data is stored locally on your device** using an on-device SQLite database. It is never transmitted to any external server or third party.
+7. Data Security
+All local data is protected by device security. Family Sync data in transit is encrypted via HTTPS/TLS. Data at rest on Supabase servers is encrypted. The developer does not have access to your synced data.
 
-## 3. Data We Do NOT Collect
+8. Data Deletion
+You can delete individual records at any time. Uninstalling the app permanently deletes all local data. If you use Family Sync, you must delete your sync account via Settings → Family Sync → Delete Account before uninstalling to remove your data from the server.
 
-- We do not collect analytics, crash reports, or usage statistics
-- We do not use advertising SDKs or tracking libraries
-- We do not create accounts or require sign-in
-- We do not access your contacts, camera, microphone, or location
-- We do not transmit any data over the internet
+9. Third-Party Services
+Supabase (Family Sync only): cloud database infrastructure. Data is stored only when you opt into Family Sync.
+Apple iCloud (iCloud Sync only): personal cloud backup. Governed by Apple's privacy policy.
+App stores may collect download and crash data independently of this app.
+10. Changes to This Policy
+Updates will be reflected with a new effective date published at the same URL.
 
-## 4. Notifications
-
-The App uses on-device scheduled notifications (via the operating system's local notification APIs) to remind you about medication times and upcoming appointments. These notifications are generated entirely on your device. No data is sent to any server to deliver them.
-
-You can enable or disable notifications at any time in the App's Settings → Notifications, or through your device's system settings.
-
-## 5. Data Export and Import
-
-The App provides an optional Backup / Export feature that creates a JSON file containing your data. This file is saved to a location you choose on your device (e.g., Files, iCloud Drive, Google Drive). The App does not upload this file anywhere automatically — you are in full control of where it is saved and shared.
-
-If you choose to store the backup in a cloud service (iCloud, Google Drive, etc.), that service's own privacy policy applies.
-
-## 6. Children's Privacy
-
-LittleMedic is designed to be used *by* parents and caregivers to track information *about* children in their care. The App is not directed at children and does not knowingly collect data from children directly.
-
-Because all data is stored locally on your device and never transmitted, the App complies with COPPA (Children's Online Privacy Protection Act) and similar regulations by design — no personal information about children is ever sent to us or any third party.
-
-## 7. Data Security
-
-Your data is protected by your device's built-in security (screen lock, device encryption). Since we never receive your data, we cannot be subject to a server-side data breach affecting your information.
-
-We recommend keeping your device secured with a passcode or biometric lock and regularly backing up your data using the App's export feature.
-
-## 8. Data Deletion
-
-You can delete individual records (children, illnesses, medications, appointments) at any time from within the App. Uninstalling the App from your device will permanently delete all locally stored data. We have no copy of your data and cannot restore it after uninstallation.
-
-## 9. Third-Party Services
-
-The App does not integrate with any third-party analytics, advertising, or data-collection services.
-
-The App is distributed through the Google Play Store and Apple App Store. These platforms may collect information about app downloads and crashes according to their own privacy policies, which are independent of this App.
-
-## 10. Changes to This Policy
-
-If we make material changes to this Privacy Policy, we will update the effective date above and publish the new version at this URL. Continued use of the App after changes are posted constitutes acceptance of the updated policy.
-
-## 11. Contact
-
-If you have any questions or concerns about this Privacy Policy, please contact us at:
+11. Contact
 stipegrbic@hotmail.com
-
----
-
-© 2026 LittleMedic · All rights reserved
 ```
