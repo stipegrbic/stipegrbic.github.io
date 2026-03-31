@@ -66,4 +66,4 @@ If this policy changes, the updated version will be included in the app update a
 
 **8. Contact**
 
-If you have questions about this privacy policy, contact: stipegrbic@hotmail.com
+If you have questions about this privacy policy, contact: [stipegrbic@hotmail.com](mailto:stipegrbic@hotmail.com)
