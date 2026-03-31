@@ -13,7 +13,7 @@ DriveCost ("the app") is developed by Stipe Grbić. This policy explains what da
 All car and expense data you enter is stored locally on your device using SQLite. This data never leaves your device unless you explicitly use the PDF export feature to share it.
 
 **AI Insights**  
-When you use the AI Insights feature, a summary of your expense data (monthly totals, category breakdowns, and vehicle statistics — no personally identifiable information) is sent to Anthropic's API to generate insights. No raw entries, names, or location data are transmitted. Anthropic's data handling is governed by their privacy policy at [anthropic.com](http://anthropic.com).
+When you use the AI Insights feature, a summary of your expense data (monthly totals, category breakdowns, and vehicle statistics — no personally identifiable information) is sent to Anthropic's API to generate insights. No raw entries, names, or location data are transmitted. Anthropic's data handling is governed by their privacy policy at [anthropic.com](https://anthropic.com).
 
 **Analytics and tracking**  
 The app does not use any analytics, advertising SDKs, or tracking frameworks. No usage data is collected or sent to the developer.
