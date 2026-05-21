@@ -1,6 +1,5 @@
 ---
 layout: page
-refactor: true
 panel_includes:
   - toc
 tail_includes:
@@ -11,32 +10,17 @@ tail_includes:
 {% include lang.html %}
 
 <header>
-    <div class="post-meta text-muted">
-        
     {% if page.image %}
-      {% capture src %}src="{{ page.image.path | default: page.image }}"{% endcapture %}
-      {% capture class %}class="preview-img{% if page.image.no_bg %}{{ ' no-bg' }}{% endif %}"{% endcapture %}
-      {% capture alt %}alt="{{ page.image.alt | xml_escape | default: "Preview Image" }}"{% endcapture %}
-
-      {% capture lqip %}
-      {% if page.image.lqip %}
-        lqip="{{ page.image.lqip }}"
-      {% endif %}
-    {% endcapture %}
-
+      {% assign img_path = page.image.first | default: page.image.path | default: page.image %}
       <div class="mt-3 mb-3">
-        <a href="{{ page.image }}" class="popup img-link preview-img">
-          <img {{ src }} class="ls-is-cached lazyloaded" data-src="{{page.image}}" {{ alt }} width="1200" height="630" {{ lqip | strip }}>
-          {%- if page.image.alt -%}
-          <figcaption class="text-center pt-2 pb-2">{{ page.image.alt }}</figcaption>
-          {%- endif -%}
+        <a href="{{ img_path }}" class="popup">
+          <img src="{{ img_path }}" alt="{{ page.image.alt | xml_escape | default: "Preview Image" }}" style="max-width:100%;height:auto;display:block;">
         </a>
+        {%- if page.image.alt -%}
+        <figcaption class="text-center pt-2 pb-2">{{ page.image.alt }}</figcaption>
+        {%- endif -%}
       </div>
     {% endif %}
-        
-      <!-- .d-flex -->
-    </div>
-    <!-- .post-meta -->
   </header>
   
   <div class="content">
