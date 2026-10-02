@@ -3,7 +3,6 @@ title: quiet-signal-support
 date: 2017-06-07
 layout: thought
 ---
-```
 Quiet Signal — Support
 
 Quiet Signal is a private, on-device habit and health journal — track what matters to you, see how
@@ -34,5 +33,3 @@ privacy policy — the one already in AppLinks.swift: https://stipe.xyz/thoughts
 Why don't I see a correlation yet?
 Quiet Signal only shows a pattern once there's genuinely enough logged data to trust it — this
 takes a little time and keeps every insight honest rather than guessed at.
-```
-
