@@ -3,62 +3,36 @@ title: drivecost-privacy-policy
 date: 2019-05-13
 layout: thought
 ---
-**Privacy Policy**
+**DriveCost – Privacy Policy**
 
-*Last updated: March 26, 2026*
+*Last updated: October 31, 2026*
 
----
+DriveCost ("the app") is developed by Stipe Grbić. This policy explains what data the app collects and how it is used.
 
-**Overview**
+**Data storage**  
+All car and expense data you enter is stored locally on your device using SQLite. Photos you add are stored on your device only. Your data does not leave your device except as described below (AI Insights, usage statistics) or when you use the PDF export feature to share it.
 
-DriveCost ("the app") is a personal car expense tracker. This privacy policy explains what data the app handles and how.
+**AI Insights**  
+When you use the AI Insights feature, a summary of your data is sent to our server (Google Firebase Cloud Functions) and passed to Anthropic's Claude API to generate insights. The summary includes your car's year, make, model, fuel type and mileage, monthly cost totals, a cost breakdown by category, average cost per kilometre and average fuel consumption. It does not include notes, licence plates, photos or individual entries. Your data is not stored on our server; to prevent abuse, the server keeps a daily usage count tied to a random anonymous ID (Firebase Anonymous Authentication), and requests are verified with Firebase App Check. Anthropic processes the data under its commercial terms and does not use it to train its models; see [anthropic.com/legal/privacy](https://www.anthropic.com/legal/privacy).
 
-The short version: the app collects nothing. All your data stays on your device.
+**Usage statistics (Google Analytics for Firebase)**  
+The app uses Google Analytics for Firebase to understand which features are used, so we can improve the app. It records which screens you open and when you add a car or an entry, including the fuel type, expense or service category, amount, litres, and whether a photo was attached. It never includes your car's make, model or licence plate, your notes, or your photos. Google Analytics also collects standard technical information such as device model, operating system, app version, approximate region, and a random app instance identifier. The app does not collect your advertising identifier and is not used for advertising.
 
----
+You can turn this off at any time in **Settings → Share usage statistics**. Google's privacy policy applies: [policies.google.com/privacy](https://policies.google.com/privacy).
 
-**Data Collection**
+**In-App Purchases**  
+Subscription management is handled entirely by Apple through the App Store. The developer does not have access to payment details.
 
-DriveCost does not collect, store, transmit, or share any personal data. The app has no analytics, no tracking, no advertising, and no backend server.
+**Feedback**  
+If you use the Send Feedback option, your email client will open a pre-addressed email. Any information you choose to include is sent directly to [stipegrbic@hotmail.com](mailto:stipegrbic@hotmail.com) and is not processed or stored automatically.
 
----
+**Third-party services**  
+- Google Firebase (Analytics; Cloud Functions, Anonymous Authentication, App Check and Firestore for AI Insights)  
+- Anthropic Claude API (AI Insights only)  
+- Apple App Store (purchases)
 
-**Data Storage**
+**Your rights**  
+Depending on where you live, you may have the right to access, delete or object to the processing of your data. Your car data is on your device and can be deleted in the app or by uninstalling it. For anything else, contact us below.
 
-All data you enter — cars, fuel entries, expenses, service records — is stored locally on your device using a private SQLite database. This data is never sent anywhere.
-
----
-
-**iCloud and Backups**
-
-DriveCost does not use iCloud or any cloud sync service. If your device is backed up to iCloud or iTunes, your app data may be included in that device backup. That backup is controlled entirely by you and Apple, not by us.
-
----
-
-**Camera and Photo Library**
-
-If you choose to add a photo to a car, the app requests access to your camera or photo library. Photos are stored locally on your device only and are never uploaded or shared.
-
----
-
-**Third-Party Services**
-
-DriveCost does not integrate with any third-party analytics, advertising, or data services.
-
----
-
-**Children**
-
-DriveCost does not knowingly collect data from anyone, including children under 13.
-
----
-
-**Changes to This Policy**
-
-If this policy changes in a future version, the updated policy will be posted here with a revised date.
-
----
-
-**Contact**
-
-Questions about this privacy policy? Email: [stipegrbic@hotmail.com](mailto:stipegrbic@hotmail.com)
+**Contact**  
+For privacy questions: [stipegrbic@hotmail.com](mailto:stipegrbic@hotmail.com)
