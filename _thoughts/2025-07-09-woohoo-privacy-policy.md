@@ -5,15 +5,17 @@ layout: thought
 ---
 # Privacy Policy for WooHoo
 
-**Last updated: October 31, 2026**
+**Last updated: November 1, 2026**
 
 Your privacy matters to us. WooHoo helps you track intimate moments securely while respecting your personal data protection.
 
+This policy describes WooHoo 2.3.0 and later. Where earlier versions work differently, this policy says so.
+
 ## Information We Collect
 
-We collect two categories of information:
+WooHoo handles two categories of information:
 
-1. **Information you provide:** data about your events, including dates, ratings, tags, moods, locations (only if you opt in), and duration
+1. **Information you provide:** data about your events, including dates, ratings, tags, moods, places and duration. This data is stored only on your device. Places are labels you choose (for example "Bedroom"); WooHoo never accesses your device's location
 2. **Crash reports:** technical information sent when the app crashes, so we can fix it (see Third-Party Services). WooHoo does not use analytics and does not track how you use the app
 
 ## How We Use Your Information
@@ -39,16 +41,18 @@ If you choose to enable leaderboards, the following aggregated statistics are ma
 - Total duration (sum of all events)
 - Average rating
 - Frequency (events per week)
-- Date of first and last event
 - Average duration per event
+- The day your statistics were last updated (date only, no time)
+
+Versions before 2.3.0 also shared the exact date and time of your first and most recent event. These are removed from your entry the next time it updates after you install 2.3.0 or later.
 
 ### What NEVER Gets Shared
 
 When you use leaderboards, we never share:
 
-- Your personal information (email, name, device info, etc.)
-- Individual event details (specific dates, times, notes, moods)
-- Locations, tags, or any descriptive information
+- Your personal information (name, email, device info, etc.)
+- Individual event details, including the dates and times of your events, notes and moods
+- Places, tags, or any descriptive information
 - Any personally identifiable information
 - Raw event data
 
@@ -57,13 +61,15 @@ When you use leaderboards, we never share:
 - You must explicitly enable leaderboards in Settings → Leaderboard Settings
 - You choose a public username (3-20 characters, alphanumeric and underscores only)
 - Your statistics are stored on Google Cloud Firestore (Google's cloud database service)
-- Your data is identified by a random ID generated on your device
+- Your entry is identified by a random ID generated on your device
 - Statistics automatically update when you add or modify events
-- You can change your username or disable leaderboards at any time from Settings
+- You can change your username at any time, or turn leaderboards off to remove your entry (see Disabling Leaderboards)
 
 ### Disabling Leaderboards
 
 You can turn leaderboards off at any time in Settings → Leaderboard Settings. WooHoo then immediately removes your username and all your statistics from the public leaderboard. If your device is offline at that moment, WooHoo retries automatically the next time you add an event or open the leaderboard.
+
+In versions before 2.3.0, turning leaderboards off only stopped updates, and your entry stayed public. If you turned leaderboards off in an earlier version, updating to 2.3.0 or later removes your entry automatically the next time you add an event or open the leaderboard. You can also email us to have it removed.
 
 To prevent the leaderboard promotion from being claimed twice, we keep only the random ID generated on your device and the date you received the promotion. Neither contains your username or any information about your events.
 
@@ -71,40 +77,46 @@ If you uninstalled WooHoo without turning leaderboards off first, email your lea
 
 ## Data Storage
 
-### Local Storage
+### On Your Device
 
-All your personal event data is stored securely on your device. We do not have access to this data unless you explicitly opt in to features that require cloud storage.
+All your event data is stored on your device. We have no access to it.
 
-### Cloud Storage (Optional)
+If you use iCloud or Google device backups, your backups may include WooHoo's data. Those backups are stored in your own Apple or Google account, and we cannot access them.
 
-- **HealthKit Sync (iOS only):** if you enable HealthKit integration, event data is synced with Apple Health on your device
-- **Leaderboards:** if you enable leaderboards, aggregated statistics (not individual event details) are stored on Google Cloud Firestore and made publicly visible to other leaderboard participants
+### Optional Features
+
+- **Apple Health (iOS only):** if you turn on Apple Health sync, WooHoo saves your events to Apple Health on your device. Health data is never sent to us or to any third party, and is never used for advertising
+- **Leaderboards:** if you enable leaderboards, the statistics listed above are stored on Google Cloud Firestore and are publicly visible to other leaderboard participants
 
 ## Your Control
 
 You have complete control over your data:
 
 - You can delete your event data from your device at any time within the app
-- You can enable or disable optional features (HealthKit sync, leaderboards) at any time
 - You can export your data for backup purposes
-- Leaderboard participation is entirely optional and does not affect core app functionality
+- You can turn optional features (Apple Health sync, leaderboards) on or off at any time
 - Turning off leaderboards removes your username and statistics from the public leaderboard
-
-## Security
-
-We use industry-standard measures to protect your data from unauthorized access. Your local data is stored securely on your device using SQLite encryption where available.
+- Leaderboard participation is entirely optional and does not affect core app functionality
 
 ## Data Retention
 
 - Event data stays on your device until you delete it in the app or uninstall WooHoo
-- Leaderboard statistics stay public while leaderboards are on, and are removed when you turn them off
+- Leaderboard statistics stay public while leaderboards are on, and are removed when you turn them off (see Disabling Leaderboards)
 - Crash reports are kept by Firebase Crashlytics for 90 days
+
+## Security
+
+Everything WooHoo sends over the internet (crash reports and leaderboard statistics) is encrypted in transit using HTTPS. Event data on your device is kept in WooHoo's private app storage and protected by your device's built-in encryption.
+
+## Purchases
+
+Purchases and subscriptions are processed by Apple (App Store) or Google (Google Play). We never receive your payment details.
 
 ## Third-Party Services
 
 WooHoo always uses:
 
-- **Firebase Crashlytics:** to collect crash reports for improving app stability. A crash report contains the error, device model, operating system version, app version and a random installation identifier. It never contains your events
+- **Firebase Crashlytics:** to collect crash reports for improving app stability. A crash report contains the error, device model, operating system version, app version and a random installation identifier. It never contains your events. In versions before 2.3.0, if you had joined leaderboards, crash reports could also include your leaderboard username and the random ID of your leaderboard entry; those reports are deleted after 90 days
 
 When you opt in to leaderboards, we also use:
 
@@ -113,6 +125,14 @@ When you opt in to leaderboards, we also use:
 WooHoo does not use analytics, advertising or tracking SDKs, and does not collect your advertising identifier.
 
 These services are provided by Google and are subject to [Google's Privacy Policy](https://policies.google.com/privacy).
+
+## Your Rights
+
+If you are in the EU, the UK or another region with similar laws, you have the right to access, correct, delete or export your personal data, to withdraw your consent at any time, and to lodge a complaint with your local data protection authority.
+
+Leaderboard data is processed only with your consent, which you give by turning leaderboards on and withdraw by turning them off. Crash reports are processed on the basis of our legitimate interest in keeping the app stable.
+
+To exercise any of these rights, contact us using the details below.
 
 ## Children's Privacy
 
@@ -124,7 +144,7 @@ We may update this privacy policy from time to time. We will notify you of any s
 
 ## Contact Us
 
-If you have questions or concerns about this privacy policy or your data, please contact us at:
+WooHoo is developed and operated by Stipe Grbić. If you have questions or concerns about this privacy policy or your data, please contact us at:
 
 - Email: [stipegrbic@hotmail.com](mailto:stipegrbic@hotmail.com)
 
