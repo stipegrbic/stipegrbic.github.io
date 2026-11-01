@@ -63,7 +63,11 @@ When you use leaderboards, we never share:
 
 ### Disabling Leaderboards
 
-You can disable leaderboards at any time from Settings → Leaderboard Settings. Disabling leaderboards will stop future updates to your public statistics. Note that previously uploaded data may remain in the database.
+You can turn leaderboards off at any time in Settings → Leaderboard Settings. WooHoo then immediately removes your username and all your statistics from the public leaderboard. If your device is offline at that moment, WooHoo retries automatically the next time you add an event or open the leaderboard.
+
+To prevent the leaderboard promotion from being claimed twice, we keep only the random ID generated on your device and the date you received the promotion. Neither contains your username or any information about your events.
+
+If you uninstalled WooHoo without turning leaderboards off first, email your leaderboard username to [stipegrbic@hotmail.com](mailto:stipegrbic@hotmail.com) and we will remove your entry within 30 days.
 
 ## Data Storage
 
