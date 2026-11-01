@@ -84,14 +84,21 @@ All your personal event data is stored securely on your device. We do not have a
 
 You have complete control over your data:
 
-- You can delete your data anytime within the app
+- You can delete your event data from your device at any time within the app
 - You can enable or disable optional features (HealthKit sync, leaderboards) at any time
 - You can export your data for backup purposes
 - Leaderboard participation is entirely optional and does not affect core app functionality
+- Turning off leaderboards removes your username and statistics from the public leaderboard
 
 ## Security
 
 We use industry-standard measures to protect your data from unauthorized access. Your local data is stored securely on your device using SQLite encryption where available.
+
+## Data Retention
+
+- Event data stays on your device until you delete it in the app or uninstall WooHoo
+- Leaderboard statistics stay public while leaderboards are on, and are removed when you turn them off
+- Crash reports are kept by Firebase Crashlytics for 90 days
 
 ## Third-Party Services
 
