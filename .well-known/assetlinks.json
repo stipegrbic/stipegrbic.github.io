@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "xyz.stipe.packy",
+      "sha256_cert_fingerprints": [
+        "79:F7:FD:B3:5A:D1:1A:71:66:72:70:DE:F4:F3:29:81:AF:EF:EB:AC:D5:C0:E4:13:DD:C5:32:0F:7D:DD:05:62",
+        "93:8B:9F:B7:C9:E7:F9:7A:1C:20:55:B5:4B:EE:B4:03:C2:6C:E5:7C:45:AB:D1:D5:D5:FF:47:60:90:C8:82:F1"
+      ]
+    }
+  }
+]

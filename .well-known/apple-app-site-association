@@ -1,0 +1,12 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["RJ92L4FJY8.xyz.stipe.packy"],
+        "components": [
+          { "/": "/packmate/join", "comment": "PackMate shared-trip invites" }
+        ]
+      }
+    ]
+  }
+}

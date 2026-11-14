@@ -1,0 +1,125 @@
+---
+layout: null
+permalink: /packmate/join
+sitemap: false
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Join a trip on PackMate</title>
+  <meta name="description" content="You're invited to a shared packing list on PackMate.">
+  <meta name="robots" content="noindex">
+  <meta property="og:title" content="Pack together on PackMate">
+  <meta property="og:description" content="You're invited to a shared packing list. Tap to join.">
+  <meta name="apple-itunes-app" content="app-id=6761140861">
+  <style>
+    :root {
+      --bg: #f5f6fb; --card: #ffffff; --text: #1a1a2e; --muted: #6b6f85;
+      --accent: #4f6bff; --accent-soft: rgba(79, 107, 255, 0.08); --border: #e4e6f0;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #12121f; --card: #1a1a2e; --text: #f2f3f8; --muted: #a3a7c0;
+        --accent: #8fa0ff; --accent-soft: rgba(143, 160, 255, 0.12); --border: #2c2c45;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center;
+      padding: 24px 16px; background: var(--bg); color: var(--text);
+      font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+    main {
+      width: 100%; max-width: 420px; background: var(--card); border: 1px solid var(--border);
+      border-radius: 24px; padding: 32px 24px; text-align: center;
+    }
+    .emoji { font-size: 44px; line-height: 1; }
+    h1 { font-size: 24px; margin: 16px 0 8px; }
+    p { margin: 0; color: var(--muted); }
+    .code {
+      margin: 24px auto 8px; padding: 16px 20px; border: 2px solid var(--accent); border-radius: 16px;
+      background: var(--accent-soft); color: var(--accent); font-size: 34px; font-weight: 800;
+      letter-spacing: 8px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      cursor: pointer; display: inline-block; user-select: all;
+    }
+    .hint { font-size: 13px; }
+    .buttons { display: grid; gap: 12px; margin-top: 28px; }
+    .btn {
+      display: block; padding: 14px 18px; border-radius: 14px; font-weight: 600; text-decoration: none;
+      background: var(--accent); color: #fff; border: 0; font-size: 16px; cursor: pointer;
+    }
+    .btn.secondary { background: transparent; color: var(--accent); border: 1.5px solid var(--accent); }
+    .steps { margin-top: 28px; text-align: left; font-size: 14px; color: var(--muted); }
+    .steps ol { margin: 8px 0 0; padding-left: 20px; }
+    [hidden] { display: none !important; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="emoji">🧳</div>
+    <h1>Pack together on PackMate</h1>
+    <p id="lead">You've been invited to a shared packing list.</p>
+
+    <div id="code-box" hidden>
+      <div class="code" id="code" title="Tap to copy"></div>
+      <p class="hint" id="copy-hint">Your join code · tap to copy</p>
+    </div>
+
+    <div class="buttons">
+      <a class="btn" id="open-android" href="https://play.google.com/store/apps/details?id=xyz.stipe.packy" hidden>Open in PackMate</a>
+      <a class="btn" id="app-store" href="https://apps.apple.com/app/id6761140861">Download on the App Store</a>
+      <a class="btn" id="google-play" href="https://play.google.com/store/apps/details?id=xyz.stipe.packy">Get it on Google Play</a>
+    </div>
+
+    <div class="steps">
+      <strong>Already have PackMate?</strong>
+      <ol>
+        <li>Open PackMate.</li>
+        <li>Tap <strong>Join a trip</strong>.</li>
+        <li>Enter the code above.</li>
+      </ol>
+    </div>
+  </main>
+
+  <script>
+    (function () {
+      var code = (new URLSearchParams(location.search).get('c') || '').trim().toUpperCase();
+      var valid = /^[A-Z0-9]{6}$/.test(code);
+      var ua = navigator.userAgent;
+      var isAndroid = /Android/i.test(ua);
+      var isIOS = /iPhone|iPad|iPod/i.test(ua) || (/Macintosh/.test(ua) && 'ontouchend' in document);
+
+      if (valid) {
+        document.getElementById('code').textContent = code;
+        document.getElementById('code-box').hidden = false;
+        document.getElementById('code').addEventListener('click', function () {
+          if (!navigator.clipboard) return;
+          navigator.clipboard.writeText(code).then(function () {
+            document.getElementById('copy-hint').textContent = 'Copied!';
+          });
+        });
+      } else {
+        document.getElementById('lead').textContent =
+          "This invite link is incomplete. Ask your travel partner for their 6-character join code.";
+        document.querySelector('.steps li:last-child').textContent = 'Enter the code from your travel partner.';
+      }
+
+      if (isIOS) document.getElementById('google-play').hidden = true;
+      if (isAndroid) {
+        document.getElementById('app-store').hidden = true;
+        if (valid) {
+          // Opens the app if it's installed (even before link verification
+          // kicks in), otherwise Chrome falls back to the Play Store.
+          var open = document.getElementById('open-android');
+          open.href = 'intent://stipe.xyz/packmate/join?c=' + code +
+            '#Intent;scheme=https;package=xyz.stipe.packy;end';
+          open.hidden = false;
+          document.getElementById('google-play').className = 'btn secondary';
+        }
+      }
+    })();
+  </script>
+</body>
+</html>

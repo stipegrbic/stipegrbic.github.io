@@ -177,6 +177,10 @@ compress_html:
   ignore:
     envs: [development]
 
+# Dot-folders are skipped by default; this one holds the PackMate app-link files.
+include:
+  - .well-known
+
 exclude:
   - "*.gem"
   - "*.gemspec"
