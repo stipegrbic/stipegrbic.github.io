@@ -1,7 +1,7 @@
 ---
 title: packy-privacy-policy
 date: 2019-06-04
-layout: thought
+layout: app-page
 ---
 PackMate – Privacy Policy
 

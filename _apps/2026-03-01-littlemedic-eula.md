@@ -1,7 +1,7 @@
 ---
 title: littlemedic-eula
 date: 2020-01-16
-layout: thought
+layout: app-page
 ---
 ## Updated EULA / Terms of Use
 

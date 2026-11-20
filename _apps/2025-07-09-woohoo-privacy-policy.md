@@ -1,7 +1,7 @@
 ---
 title: woohoo-privacy-policy
 date: 2021-07-09
-layout: thought
+layout: app-page
 ---
 # Privacy Policy for WooHoo
 

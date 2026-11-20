@@ -1,7 +1,7 @@
 ---
 title: packy-support
 date: 2019-03-25
-layout: thought
+layout: app-page
 ---
 **PackMate Support**
 

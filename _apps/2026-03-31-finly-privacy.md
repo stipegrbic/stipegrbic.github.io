@@ -1,7 +1,7 @@
 ---
 title: Finly-privacy
 date: 2019-07-10
-layout: thought
+layout: app-page
 ---
 **Finly Privacy Policy**
 

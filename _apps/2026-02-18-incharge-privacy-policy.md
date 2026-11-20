@@ -1,7 +1,7 @@
 ---
 title: InCharge privacy policy
 date: 2020-01-15
-layout: thought
+layout: app-page
 ---
 # Privacy Policy
 

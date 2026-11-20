@@ -133,6 +133,11 @@ collections:
     sort_by: order
   thoughts:
     output: true
+  # App privacy policies, terms and support pages. They are not listed anywhere
+  # on the site, but keep the /thoughts/<filename>.html URLs the app stores link to.
+  apps:
+    output: true
+    permalink: /thoughts/:path:output_ext
 
 
 defaults:

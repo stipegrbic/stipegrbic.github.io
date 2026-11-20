@@ -1,7 +1,9 @@
 ---
 title: incharge-terms
 date: 2020-01-15
-layout: thought
+layout: app-page
+redirect_from:
+  - /thoughts/2026-02-24-incharge-terms2.html
 ---
 **Terms & Conditions**  
 

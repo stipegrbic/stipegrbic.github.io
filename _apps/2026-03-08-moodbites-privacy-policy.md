@@ -1,7 +1,7 @@
 ---
 title: moodbites-privacy-policy
 date: 2020-01-24
-layout: thought
+layout: app-page
 ---
 **MoodBites Privacy Policy**
 

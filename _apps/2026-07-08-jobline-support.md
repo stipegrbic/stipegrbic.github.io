@@ -1,7 +1,7 @@
 ---
 title: jobline-support
 date: 2026-07-08
-layout: thought
+layout: app-page
 ---
 **Jobline Support**
 

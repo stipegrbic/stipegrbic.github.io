@@ -1,7 +1,7 @@
 ---
 title: quiet-signal-privacy
 date: 2017-09-26
-layout: thought
+layout: app-page
 ---
 **Privacy Policy — Quiet Signal**
 

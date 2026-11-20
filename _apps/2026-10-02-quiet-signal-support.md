@@ -1,7 +1,7 @@
 ---
 title: quiet-signal-support
 date: 2017-06-07
-layout: thought
+layout: app-page
 ---
 Quiet Signal — Support
 

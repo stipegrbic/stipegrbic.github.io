@@ -1,7 +1,7 @@
 ---
 title: llittle-medic-privacy
 date: 2020-01-23
-layout: thought
+layout: app-page
 ---
 **LittleMedic Privacy Policy**
 

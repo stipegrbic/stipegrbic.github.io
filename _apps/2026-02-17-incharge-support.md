@@ -1,7 +1,7 @@
 ---
 title: incharge-support
 date: 2020-01-07
-layout: thought
+layout: app-page
 ---
 # InCharge Support
 

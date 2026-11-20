@@ -6,6 +6,7 @@ layout:
   post: Post
   category: Category
   tag: Tag
+  app-page: App info
 
 # The tabs of sidebar
 tabs:

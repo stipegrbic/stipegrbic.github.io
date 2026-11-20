@@ -1,7 +1,9 @@
 ---
-title: jobline-privacy
-date: 2019-02-06
-layout: thought
+title: Jobline-privacy-policy
+date: 2026-07-08
+layout: app-page
+redirect_from:
+  - /thoughts/2026-07-08-jobline-privacy.html
 ---
 **Jobline Privacy Policy**
 

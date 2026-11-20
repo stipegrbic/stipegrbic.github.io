@@ -1,7 +1,7 @@
 ---
 title: drivecost-support
 date: 2019-05-14
-layout: thought
+layout: app-page
 ---
 **DriveCost – Support**
 

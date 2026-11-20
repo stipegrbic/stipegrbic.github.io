@@ -11,7 +11,7 @@
 
 <!-- layout specified -->
 
-{% if page.layout == 'post' or page.layout == 'page' or page.layout == 'home' or page.layout == 'thought' %}
+{% if page.layout == 'post' or page.layout == 'page' or page.layout == 'home' or page.layout == 'thought' or page.layout == 'app-page' %}
   {% assign urls = urls | append: ',' | append: site.data.origin[type].lazysizes.js %}
 
   {% unless page.layout == 'home' %}
@@ -59,7 +59,7 @@
 {% case page.layout %}
   {% when 'home', 'categories', 'post', 'page' %}
     {% assign js = page.layout %}
-  {% when 'thought' %}
+  {% when 'thought', 'app-page' %}
     {% assign js = 'page' %}
   {% when 'archives', 'category', 'tag' %}
     {% assign js = 'misc' %}

@@ -1,7 +1,9 @@
 ---
 title: drivecost-privacy-policy
 date: 2019-05-13
-layout: thought
+layout: app-page
+redirect_from:
+  - /thoughts/2026-03-27-drivecost-privacy.html
 ---
 **DriveCost – Privacy Policy**
 

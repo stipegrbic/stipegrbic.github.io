@@ -1,7 +1,7 @@
 ---
 title: littlemedic-support
 date: 2020-01-10
-layout: thought
+layout: app-page
 ---
 LittleMedic Support
 

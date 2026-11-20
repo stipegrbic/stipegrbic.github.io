@@ -1,7 +1,7 @@
 ---
 title: finly-support
 date: 2019-06-05
-layout: thought
+layout: app-page
 ---
 **Finly Support**
 
