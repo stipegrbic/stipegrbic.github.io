@@ -5,6 +5,24 @@ order: 5
 ---
 Here I'll list some of my projects I did in my free time. The work I do on my day job you can find elsewhere :)
 
+- [Quiet Signal](https://apps.apple.com/app/id6801772433) – A private habit and health journal. Log whatever matters to you (workouts, sleep, mood, stress, time with people) in a tap or two and see how often it really happens, instead of relying on memory. Everything stays on your device, no account needed.
+
+- [Jobline](https://apps.apple.com/app/id6788337328) – A simple back office for solo trade work like pressure washing, lawn care or window cleaning. See today's jobs, snap photos and send professional quotes and invoices right from your phone.
+
+- [Finly](https://apps.apple.com/app/id6761371123) – A clean personal finance tracker. Log income and expenses, organize them with categories and tags, and see where your money goes with charts and monthly summaries. Also on [Google Play](https://play.google.com/store/apps/details?id=xyz.stipe.moneo).
+
+- [MoodBites](https://apps.apple.com/app/id6760249195) – An emotional eating tracker. Log meals together with how you felt, track cravings and water, and get personal insights from Moo, the AI advisor. Also on [Google Play](https://play.google.com/store/apps/details?id=xyz.stipe.moodbites).
+
+- [DriveCost](https://apps.apple.com/app/id6761204018) – Shows what your car really costs you every month: fuel, insurance, maintenance, repairs and everything in between, plus fuel consumption. Also on [Google Play](https://play.google.com/store/apps/details?id=xyz.stipe.drivecost).
+
+- [PackMate](https://apps.apple.com/app/id6761140861) – Smart packing lists for every trip. Tell it where you're going, for how long and who's traveling (or just describe the trip) and it builds the list, which you can share with your travel partner. Also on [Google Play](https://play.google.com/store/apps/details?id=xyz.stipe.packy).
+
+- [LittleMedic](https://apps.apple.com/app/id6759505275) – Keeps your kids' health history in one place: illnesses, symptoms, medications and doctor visits on a simple timeline, with reminders. All data stays on your device.
+
+- [InCharge](https://apps.apple.com/app/id6759303406) – A personal life admin app. Instead of an endless to-do list it's built around responsibilities and commitments, so you can clearly see what needs your attention.
+
+- [WooHoo](https://apps.apple.com/app/id6747980798) – A private, playful tracker for your intimate life, with moods, tags and achievements. Your data stays on your device. Also on [Google Play](https://play.google.com/store/apps/details?id=xyz.stipe.woohoo).
+
 - [Event Timing](https://www.microsoft.com/en-us/p/event-timing/9nk7fcvtrvqq) - An application I created to easily see how much time passed since or how much time to some event. I was interested in various time units for this period so I can easily see the interval in seconds, minutes, hours, days or weeks as a unit of time. I also added support for toast notification which can be useful to notify you prior to some important event like anniversary (guess where I got the idea from :)) Not that I forget about it, but I was genuinely interested in how much time we were together in different time units.
 
 - [Days from today](https://daysfromtoday.azurewebsites.net/) - A web version of the application before. I just wanted to have this little utility available from any device. That was enough of motivation to fulfill my desire to try some new web technology and this is the result.
