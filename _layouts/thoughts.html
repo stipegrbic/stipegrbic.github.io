@@ -5,7 +5,9 @@ layout: default
 
 {% include lang.html %}
 
-{% assign thoughts = site.thoughts | sort: 'date' | reverse %}
+{% comment %} `page.paginator` is set by _plugins/thoughts-paginator.rb {% endcomment %}
+{% assign paginator = page.paginator %}
+{% assign thoughts = paginator.items %}
 
 <h1 class="ps-lg-2">
     <i class="fa fa-lightbulb fa-fw text-muted"></i>
@@ -61,5 +63,5 @@ layout: default
 </div>
 
 {% if paginator.total_pages > 1 %}
-  {% include post-paginator.html %}
+  {% include post-paginator.html paginate_path=paginator.paginate_path first_page_path=paginator.first_page_path %}
 {% endif %}
