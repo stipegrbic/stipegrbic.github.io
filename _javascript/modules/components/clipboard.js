@@ -102,10 +102,6 @@ export function initClipboard() {
   const btnCopyLink = $('#copy-link');
 
   btnCopyLink.on('click', (e) => {
-    
-    console.log("njah");
-    console.log(window.location.href);
-
     let target = $(e.target);
 
     if (isLocked(target)) {
